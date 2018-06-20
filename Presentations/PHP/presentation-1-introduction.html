@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WBDV243 - Intro</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>WBDV243</h1>
+					<h3>Web Authoring II</h3>
+				</section>
+
+				<section>
+					<h2>PHP, WordPress &amp; Content Management</h2>
+					<p>
+						Design, Develop and Implement
+					</p>
+
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>PHP - What can I do?</h2>
+						<ul>
+							<li class="fragment">process forms</li>
+							<li class="fragment">upload files</li>
+							<li class="fragment">generate thumbnails</li>
+							<li class="fragment">watermark images</li>
+							<li class="fragment">read/write files</li>
+							<li class="fragment">communicate with a database</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>How PHP Works</h2>
+					<figure>
+						<img src="images/communication-1.jpg" alt="Web communication">
+						<figcaption>Request/Response</figcaption>
+					</figure>
+				</section>
+
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>How PHP Works</h2>
+					<figure>
+						<img src="images/communication-2.jpg" alt="Web communication">
+						<figcaption>Web Server -> PHP Engine -> Database</figcaption>
+					</figure>
+
+					<aside class="notes">
+						This process usually takes a fraction of a second, causing no noticeable delay.
+					</aside>
+				</section>
+
+				<section>
+					<h2>An Embedded Language</h2>
+					<pre><code data-trim contenteditable>
+&lt;body&gt;
+
+  <h1>My first PHP page</h1>
+
+  &lt;?php
+  echo "Hello World!";
+  ?&gt;
+
+&lt;/body&gt;
+					</code></pre>
+					<p>What the text editor sees.</p>
+				</section>
+
+				<section>
+					<h2>An Embedded Language</h2>
+					<pre><code data-trim contenteditable>
+&lt;body&gt;
+
+  &lt;h1&gt;My first PHP page&lt;/h1&gt;
+
+  Hello World!
+
+&lt;/body&gt;
+					</code></pre>
+					<p>What the browser sees.</p>
+				</section>
+
+
+				<section>
+					<h2>What Do You Need?</h2>
+					<ul>
+						<li class="fragment">PHP-enabled web server</li>
+						<ul>
+							<li class="fragment">remote server</li>
+							<li class="fragment">local testing environment - safer/faster</li>
+						</ul>
+						<li class="fragment">script editor</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Local Testing</h2>
+					<ul>
+						<li class="fragment"><a href="http://www.mamp.info/en/" target="mamp">MAMP (OSX)</a></li>
+						<li class="fragment"><a href="https://www.apachefriends.org/index.html" target="mamp">XAMPP (Windows)</a></li>
+						<ul>
+							<li class="fragment">Apache web server</li>
+							<li class="fragment">PHP</li>
+							<li class="fragment">MySQL database</li>
+							<li class="fragment">phpMyAdmin</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Script Editors</h2>
+					<ul>
+						<li class="fragment"><a href="http://www.sublimetext.com/3" target="sublime">Sublime Text</a></li>
+						<li class="fragment"><a href="http://brackets.io/" target="brackets">Adobe Brackets</a></li>
+						<li class="fragment"><a href="https://atom.io/">Atom</a></li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WBDV243 - Control Structures</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>WBDV243</h1>
+					<h3>Web Authoring II</h3>
+				</section>
+
+				<section>
+					<h2>PHP</h2>
+					<p>
+						Control Structures
+					</p>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Making Decisions</h2>
+						<ul>
+							<li class="fragment">A condition must either be true or false</li>
+							<li class="fragment">True and false are boolean values</li>
+							<li class="fragment">Decisions can be based on comparison of two non-boolean values</li>
+							<li class="fragment">PHP booleans can be explicit or implicit</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Explicit Boolean Values</h3>
+						<ul>
+							<li class="fragment">Keywords: <i>true</i> and <i>false</i></li>
+							<li class="fragment">Case-sensative</li>
+							<ul class="fragment">
+								<li><code>$OK = true;</code></li>
+								<li><code>$OK = FalSe;</code></li>
+							</ul>
+							<li class="fragment">Do NOT enclose in quotes</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Implicit Boolean Values</h3>
+						<p>PHP considers all of the following <code>false</code></p>
+						<ul>
+							<li class="fragment">The keywords <code>false</code> and <code>null</code></li>
+							<li class="fragment">Zero as a number or string (0, 0.0, '0')</li>
+							<li class="fragment">An empty string ('', "")</li>
+							<li class="fragment">An empty array</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Conditional Statements</h2>
+<pre><code data-trim contenteditable>
+&lt;?php
+if (condition is true) {
+  do something
+}
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+if (condition is true) {
+  do something
+} else {
+  do something else
+}
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+if (condition is true) {
+  do something
+} elseif {
+  perform alternative task
+} else {
+  do something different
+}
+</code></pre>
+				</section>
+
+				<section>
+					<section>
+						<h2>Comparison Operators</h2>
+						<table>
+							<tr>
+								<th>Symbol</th>
+								<th>Meaning</th>
+							</tr>
+							<tr>
+								<td>==</td>
+								<td>Both values are equal</td>
+							</tr>
+							<tr>
+								<td>!=</td>
+								<td>Values are not equal</td>
+							</tr>
+							<tr>
+								<td>===</td>
+								<td>Values are identical</td>
+							</tr>
+							<tr>
+								<td>!==</td>
+								<td>Values are not identical</td>
+							</tr>
+							<tr>
+								<td>></td>
+								<td>Value on the left is greater than the one on the right</td>
+							</tr>
+							<tr>
+								<td>>=</td>
+								<td>Value on the left is greater than or equal to the one on the right</td>
+							</tr>
+							<tr>
+								<td>&lt;</td>
+								<td>Value on the right is greater than the one on the left</td>
+							</tr>
+							<tr>
+								<td>&lt;=</td>
+								<td>Value on the right is greater than or equal to the one on the left</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+
+				<section>
+					<h2>Switch</h2>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+switch ($var) {
+  case 'value1':
+    // do something
+    break;
+  case 'value2':
+    // do something different
+    break;
+  default:
+    // do something else
+}
+</code></pre>
+				</section>
+
+				<section>
+					<section>
+						<h2>Loops</h2>
+					</section>
+					<section>
+						<h3>While Loops</h3>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+while (condition) {
+  // code to be executed
+}
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+// initialize value
+$i = 1;
+
+while ($i &lt; 10) {
+  echo $i . '<br>';
+  // increment $i
+  $i++;
+}
+</code></pre>
+					</section>
+				<section>
+					<h3>Do &hellip; While Loop</h3>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+do {
+  // code to be executed
+} while (condition)
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+// initialize value
+$i = 100;
+
+do {
+  echo $i . '<br>';
+  // increment $i
+  $i++;
+} while ($i &lt;= 10;)
+</code></pre>
+				</section>
+				<section>
+					<h3>For Loop</h3>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+for (initialize; condition; increment) {
+  // code to be executed
+}
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+$characters = ['Bugs','Daffy','Speedy'];
+
+for ($i = 0; $i &lt; count($characters); $i++) {
+  echo $characters[$i] . '<br>';
+}
+</code></pre>
+					<p class="fragment">Let's build a list of characters in HTML!</p>
+				</section>
+			</section>
+
+			<section>
+				<h3>Accessing Arrays - foreach</h3>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+foreach ($array_name as $value) {
+  // do something with $value
+}
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+$characters = ['Bugs','Daffy','Speedy'];
+
+foreach ($characters as $item) {
+  echo $item . '<br>';
+}
+</code></pre>
+			</section>
+
+			<section>
+				<h2>Accessing Array Keys and Values</h2>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+foreach ($array_name as $key => $value) {
+  // do something with $key and $value
+}
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+$descriptions = [
+  'Bugs' => 'bunny',
+  'Daffy' => 'duck',
+  'Speedy' => 'the fastest mouse'
+];
+
+foreach ($descriptions as $key => $description) {
+  echo "<p>$key is $description</p>";
+}
+</code></pre>
+<p class="fragment">Try It!</p>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+foreach ($descriptions as $key => $description) {
+  echo "<p>$key is";
+  if ($key !== 'Speedy') echo ' a';
+  echo "" $description</p>";
+}
+</code></pre>
+
+			</section>
+
+			<section>
+				<h2>Functions</h2>
+			</section>
+
+			<section>
+			<p>PHP has many built in functions.</p>
+			<ul>
+				<li class="fragment">phpVersion();</li>
+				<li class="fragment">strtolower();</li>
+				<li class="fragment">sort();</li>
+			</ul>
+			</section>
+
+			<section>
+				<h3>User Defined Functions</h3>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+function f_name($parameters) {
+  // do something
+}
+</code></pre>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+function double_value($my_number) {
+  return $my_number * 2;
+}
+
+$i = 2;
+echo double_value($i); // 4
+</code></pre>
+			</section>
+
+			<section>
+				<h2>Includes</h2>
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+include 'some_folder/some_file.php';
+</code></pre>
+
+<pre class="fragment"><code data-trim contenteditable>
+&lt;?php
+include 'includes/functions.php';
+</code></pre>
+			</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
