@@ -1,0 +1,112 @@
+.on{background-color:#ffa335 !important;}
+
+.cart-notify i span{background:#ffa335;}
+
+/*menu*/
+#top-menu.navbar-default .navbar-nav li:hover {
+	border-bottom: 2px #ffa335 solid;
+	transition: all 0.5s;
+	background:#ffa335;
+}
+
+/*--Home page About us icon*/
+#home-banner a.btn.chooser-btn{background-color:#ffa335;}
+
+.col-about-us i {
+    color: #ffa335 ;
+}
+/*--why-choose-us background*/
+#why-choose-us .section-title{background:#ffa335;}
+#why-choose-us .section-title:after{background:#ffa335;}
+
+
+/*--our-work-block background*/
+
+#our-work-block .works figcaption{    background: rgba(255,0,0,0.5);}
+/*--services icon*/
+.services-block i{background:#ffa335;}
+
+#testimonial.owl-theme .owl-controls .owl-page.active {
+	opacity: 1;
+	border:1px #ffa335 solid;
+}
+
+/*--clients*/
+#clients-block{
+	background:#ffa335;
+	
+}
+
+/*--article head color*/
+article a h5:hover {
+	color: #ffa335;
+	
+}
+/*--Free trial color*/
+
+#free-trial-block a {border: 1px #ffa335 solid; background:#ffa335;}
+
+/*--Footer*/
+.subcribe-block form .btn i.fa{color:#ffa335;}
+
+.subcribe-block form input:focus {
+	border: 1px #ffa335 solid;}
+	.bottom-footer .site-identity .socio li a:hover {
+	color: #ffa335;
+	transition: all 0.5s;
+}
+
+/*single*/
+
+aside .widget_search button {
+	background: #ffa335;
+}
+aside .widget_search button:hover {
+
+	border: 1px #ffa335 solid;
+}
+
+.widget-title:after{background:#ffa335;}
+
+.tagcloud a:hover {
+	
+	background: #ffa335;
+
+}
+
+.single .single-post ul li:before, .page .page-block ul li:before, .single-jetpack-portfolio .page-block ul li:before{background:#ffa335;}
+blockquote {border-left: 3px #ffa335 solid;}
+
+.author-box .author-box-title {
+	color: #ffa335;
+	
+}
+.author-box .author-box-title a {
+	background: #ffa335;
+
+}
+
+.single .single-post footer.entry-meta-bar a:hover, .page .page-block footer.entry-meta-bar a:hover {
+
+	border: 0px #ffa335 solid;
+	background: #ffa335;
+	
+}
+
+.posts-navigation ul li a:hover {
+
+	border-color: #ffa335;
+	background: #ffa335;
+	
+}
+
+#respond input[type=submit] {
+	background:#ffa335;}
+	
+article header .date-article {background:#ffa335;}
+
+/*Woocommerce*/
+
+.woocommerce span.onsale{background-color:#ffa335;}
+.woocommerce ul.products li.product .button:after {background: #ffa335;}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {background: #ffa335;}
