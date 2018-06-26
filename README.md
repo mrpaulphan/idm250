@@ -1,45 +1,52 @@
-# IDM250: Content Management Systems
-
-## Syllabus
-
+# IDM250: Content Management Systems | Syllabus
 
 ### Course Description
-Students learn the basic principles of PHP; set up a content management system and develop a custom template structure. The class will also focus on cutting-edge HTML5/CSS3 techniques, including: how to plan, organize, and maintain effective stylesheets, build liquid, elastic, and hybrid layouts.
+Students learn the basic principles of PHP; set up a content management system and develop a custom template structure. The class will lightly focus on cutting-edge HTML5/CSS3 techniques, including: how to plan, organize, and maintain effective stylesheets, build liquid, elastic, and hybrid layouts.
 
 ### Prerequisites
-●	IDM 222
-●	IDM 232
-●	Self hosted web domain
+- IDM 222
+- IDM 232
+- Self hosted web domain
 
 ### Instructor 
 Paul Phan
+
 E-mail: pp455@drexel.edu
+
 Meetings available by appointment with 48 hour notice
 
 ### Required Reading:
-●	Supplied pdfs
-●	Drexel's Haggerty Library eResources as assigned
-●	Online resources as assigned
+- Supplied pdfs
+- Drexel's Haggerty Library eResources as assigned
+- Online resources as assigned
 
 ### Learning Objectives
 By the end of the course, the successful student will be able to design and implement a successful online content management system utilizing a custom design theme using HTML5, CSS3, PHP and MySQL.
 
 ### Course Format
 Each class session should run as follows:
-   	1. Homework Review
-   	2. Software Tutorial
-   	3. Homework Overview
-	4. Lab Workshop
+1. Homework Review
+2. Software Tutorial
+3. Homework Overview
+4. Lab Workshop
 
 ### Grading Breakdown
-●	40% Homework Assignments
-●	20% Midterm
-●	40% Final Project
+- 40% Homework Assignments
+- 20% Midterm
+- 40% Final Project
 
 ### Grading Policy
 Grading is based upon attendance, class participation, homework assignments and progression in the medium.
 
 Students who are on their laptops or cellphones during class critiques will lose points on their own assignment.
+
+#### Homework Assignments
+- 1st late = -15%
+- 2nd late = automatic zero
+
+#### Midterm/Final
+- 1 day late = -10%
+- 2 days late = automatic zero
 
 ### Attendance Policy
 Attendance is mandatory. Students are expected to attend all classes and strictly adhere to the project due dates. Lack of participation in class discussions will count against your grade.
@@ -53,86 +60,29 @@ One total point will be removed for every time a student arrives late to class. 
 The dates your assignments are due are indicated clearly in this course outline. Assignments are due on those dates unless you have submitted a written request for an extension at least ONE class before the assignment is due. Late assignments lose 50%. After 1 week, late assignments will no longer be accepted and will result in a zero. 
 
 ### Grade Percents
-●	A+	97 to 100%
-●	A	93 to 96%
-●	A-	90 to 92% 
-●	B+	87 to 89% 
-●	B	83 to 86%
-●	B-	80 to 83% 
-●	C+	77 to 79% 
-●	C	73 to 76%
-●	C-	70 to 72% 
-●	D+	67 to 69% 
-●	D	63 to 66%
-●	F	62% or below
-
+- A+ 97 to 100%
+- A 93 to 96%
+- A- 90 to 92% 
+- B+ 87 to 89% 
+- B	83 to 86%
+- B- 80 to 83% 
+- C+ 77 to 79% 
+- C	73 to 76%
+- C- 70 to 72% 
+- D+ 67 to 69% 
+- D	63 to 66%
+- F	62% or below
 
 ### Student Responsibility
-    • Attend all classes
-    • Care about your work
-    • Make progress in the medium
-    • Help, cooperate and collaborate with your classmates
-    • Take risks
-    • Make mistakes
+- Attend all classes
+- Care about your work
+- Make progress in the medium
+- Help, cooperate and collaborate with your classmates
+- Take risks
+- Make mistakes
 
 ### Academic Honesty Policy
 Drexel University is committed to a learning environment that embraces academic honesty. Faculty, students, and administrators share responsibility for maintaining this environment of academic honesty and integrity, accepting individual responsibility for all actions, personal and academic. Each member of our community is expected to read, understand, and uphold the values identified and described in our “Academic Policies, Procedures and Regulations” as written in the official student handbook. Instances of academic dishonesty, such as cheating and plagiarism, will be dealt with appropriately.
-
-
-### Weekly Topical Outline
-
-Week 1 - 06/27
-●	Review Class Requirements
-●	Content Management Systems and Dynamic Websites
-●	Installing and configuring WordPress
-●	Planning your site
-●	Presentation
-
-Week 2 - 07/04
-●	NO CLASS (Independence Day)
-●	Assignment 01 due
-
-Week 3 - 07/11
-●	Intro to PHP
-●	Assignment 02 due
-●	https://www.awwwards.com/websites/?countries=U.S.A.&categories=portfolio
-●	Presentation 01
-●	Presentation 02
-●	Presentation 03
-
-Week 4 - 07/18
-●	Coding for WordPress, Pt. 1
-
-
-Week 5 - 07/25
-●	Coding for WordPress, Pt. 2
-●	Midterm Critique
-●	Midterm due
-
-Week 6 - 08/01
-●	Plugins, Widgets, & Dynamic Menu Systems
-●	Assignment 03 due
-
-Week 7 - 08/08
-●	NO CLASS but online lecture required on:
-○	Securing WordPress
-○	Search Engine Optimization
-
-Week 8 - 08/15
-●	Lecture as needed
-●	Assignment 04 due
-
-Week 9 - 08/22
-●	Lecture as needed
-
-Week 10 - 08/29
-●	Pre-Crit Reviews and Debugging
-
-Week 11 - 09/06
-●	Final Critique
-○	Section 001 - 1030AM - 1230PM (URBN 250)
-○	Section 002 - 1PM - 3PM (URBN 250)
-●	Final DUE
 
 ### Americans with Disabilities Act
 In compliance with Section 504 of the Rehabilitation Act of 1973, the Americans with Disabilities Act of 1990, and applicable federal and state laws, Drexel University ensures people with disabilities will have an equal opportunity to participate in its programs and activities. Members and guests of the Drexel community who have a disability need to register with the Office of Disability Services (ODS), if requesting auxiliary aids, accommodations, and services to participate in Drexel University’s programs. All requests for reasonable and appropriate auxiliary aids, academic adjustments, and services will be considered on a case-by-case basis and in a timely fashion.
