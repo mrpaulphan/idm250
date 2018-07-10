@@ -99,3 +99,41 @@ Acknowledging Conditions and Obligations in Syllabus
 The student acknowledges receipt of this syllabus and the information herein contained by continuing to attend classes and turn in assignments.
 
 This syllabus is intended as a guideline. The instructor reserves the right to change from it in interest of responding to individual class need.
+
+
+### Term Agenda
+
+#### Week 01
+- Introduction
+- Local/Server WordPress installation 
+
+#### Week 02
+- NO CLASS
+
+#### Week 03
+- PHP Basics
+
+#### Week 04
+- Worpress Theme Development
+
+
+#### Week 05
+- Worpress Theme Development
+
+#### Week 06
+- Worpress Theme Development
+
+#### Week 07
+- Worpress Theme Development
+
+#### Week 08
+- Worpress Theme Development
+
+#### Week 09
+- Open Lab
+
+#### Week 10
+- Open Lab
+- Deployment
+
+

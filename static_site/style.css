@@ -4816,3 +4816,27 @@ blockquote {
 	width: 68%;
 }
 }
+
+
+
+
+.column-sidebar {
+	width: 100%;
+}
+.column-main {
+	width: 100%;
+}
+@media (min-width: 1200px) {
+	.split-sidebar {
+		display: flex;
+	}
+	
+	.column-sidebar {
+		width: 29%;
+	}
+	.column-main {
+		width: 74%;
+	}
+
+}
+
