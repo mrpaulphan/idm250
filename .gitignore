@@ -1,1 +1,16 @@
 instructor_materials/resources/*
+
+
+wordpress/wp-config.php
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/backup-db/
+wordpress/wp-content/backups/
+wordpress/wp-content/blogs.dir/
+wordpress/wp-content/cache/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/uploads/
+wordpress/wp-content/mu-plugins/
+wordpress/wp-content/wp-cache-config.php
+wordpress/wp-content/plugins/hello.php
+
+
