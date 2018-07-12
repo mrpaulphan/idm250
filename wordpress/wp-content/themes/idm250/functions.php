@@ -1,1 +1,2 @@
-<?php
+<?php 
+echo 'functions......';
