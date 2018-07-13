@@ -89,7 +89,7 @@ Release Info
 
 ## How to Submit
 Submit two links via Blackboard under one submission
-- Upload your zipped file via your Wordpress website and send me a direct link to download it. Example: `http://idm250.local/wp-content/uploads/2018/07/zip.zip`
+- Upload your zipped file via your Wordpress website and send me a direct link to download it. Example: `http://idm250.local/wp-content/uploads/2018/07/idm250-001-pp455-hwk01.zip`
 - URL to your Github release Example: `https://github.com/mrpaulphan/idm250/releases/tag/v0.0.1`
 
 
