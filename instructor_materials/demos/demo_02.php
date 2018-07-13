@@ -40,36 +40,6 @@ $schools = [
 
 <?php
 
-
-echo '<h1>Recreate everything below this line</h1>';
-echo '<hr>';
-echo '<h2>Example 1</h2>';
-$characters = ['Paul', 'Mark', 'Jane'];
-    for ($i = 0; $i < count($characters); $i++) {
-        echo $i . ' is the key and ' . $characters[$i] . ' is the value in the $characters array <br/>';
-    }
-
-    // -----
-    echo '<h2>Example 2</h2>';
-
-    $schools = [
-        'Drexel University' => [
-            'type' => 'University',
-            'url'  => 'https://drexel.edu'
-        ],
-        'Temple University'  => [
-            'type' => 'University',
-            'url'  => 'https://www.temple.edu/'
-        ],
-        'University of Pennsylvania' => [
-            'type' => 'University',
-            'url'  => 'https://www.upenn.edu/'
-        ],
-      ];
-    foreach ($schools as $key => $school) {
-        echo '<p>' . $key . ' is a ' . $school['type'] . ' and the website is ' . $school['url'] . ' </p>';
-    }
-
 ?>
 
 </body>
