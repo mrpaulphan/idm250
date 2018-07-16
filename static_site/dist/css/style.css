@@ -368,7 +368,7 @@ s
 color:#fff;
 }
 .search-cart-block #search input[type="text"] {
-	background: url(img/search-white.png) no-repeat 0px 3px;
+	background: url(dist/img/search-white.png) no-repeat 0px 3px;
 	border: 0 none;
 	font: bold 12px Arial, Helvetica, Sans-serif;
 	color: #fff;
@@ -2668,7 +2668,7 @@ blockquote {
 	margin: 30px;
 	margin-left: 40px;
 	padding-left: 36px;
-	background: #fff url(img/bq-bg.png) 0 0 no-repeat;
+	background: #fff url(dist/img/bq-bg.png) 0 0 no-repeat;
 }
 .page blockquote {
 	margin-left: 8.333%;
