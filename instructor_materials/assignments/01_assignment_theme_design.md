@@ -85,6 +85,8 @@ Release Info
 - Ch.2 Planning Your Theme
 - Ch. 3 Theme Design 101
 
+## Project Overview
+- Create a `readme.md` file at the root of your project. In this file, write a short description about your project and explain what it is. This will help remind myself/others what your final project is. 
 
 
 ## How to Submit
