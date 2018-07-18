@@ -69,7 +69,7 @@ Make sure your the wordpress starter theme has been pushed to github. Once you'v
 Here's a [link](https://git-scm.com/book/en/v2/Git-Basics-Tagging) on how to create a git tag. Using your terminal/command line, get inside the folder where your project files are kept: cd `/path/to/my/codebase`. You want to 
 1. Create a tag `git tag -l "v0.0.1"`
 2. Annotate the tag `git tag -a v0.0.1 -m "v0.0.1"`
-3. push the tag `git push origin v.0.0.1`
+3. push the tag `git push origin v0.0.1`
 
 ### Creating a release
 Use this article [here](https://help.github.com/articles/creating-releases/me) to create a github release. 
