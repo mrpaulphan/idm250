@@ -1,5 +1,5 @@
 #Midterm
-Convert your designs into a fully functional responsive static site. Place your static site inside a folder on your server called `static`. Your directory should look like `https://yourdoamin.com/idm250/static/`. The only feature on your site that should not work is the search feature. Everything link should work, content is real, and images should be high quality. 
+Convert your designs into a fully functional responsive static site. Place your static site inside a folder on your server called `static`. Your url should look like `https://yourdomain.com/idm250/static/`. The only feature on your site that should not work is the search functionality. All link should work, content is real, and images should be high quality.
 
 ## Github Release
 Make sure your theme has been pushed to your repository. Once you've done that, you will need to create a release for this. 
@@ -31,19 +31,18 @@ Release Info
     - Padding and Space is consistent
     - There is a clear visual hierarchy
 - Code Quality
-    Site is smartly coded using modules for repeating code segments
-    Content is NOT STATIC and can be updated through the WordPress dashboard
-    Code is clean. White spaces, comments, and proper indentation is used in the files.
+    - Code is clean. White spaces, comments, and proper indentation is used in the files.
 - Theme Requirements
-    - Dynamic Navigation
     - Required Templates
         - Home
         - General
-        - Post Listing
-        - Post Detail
+        - Sidebar
+        - Post Listing (Archive)
+        - Post Detail (Single)
         - Search
-        - Archive/Category Page
         - 404 Page
-    
+
 ## Submission
 - Link to your `v0.5.0` release
+- Link to your static site
+    - Example: `https://yourdomain.com/idm250/static/`
