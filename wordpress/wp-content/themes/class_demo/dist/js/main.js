@@ -7,10 +7,10 @@ var currentTallest = 0,
      rowDivs = new Array(),
      $el,
      topPosition = 0;
- jQuery(container).each(function() {
+ $(container).each(function() {
 
-   $el = jQuery(this);
-   jQuery($el).height('auto')
+   $el = $(this);
+   $($el).height('auto')
    topPostion = $el.position().top;
 
    if (currentRowStart != topPostion) {
@@ -31,12 +31,12 @@ var currentTallest = 0,
  });
 }
 
-jQuery(window).load(function() {
+$(window).load(function() {
   equalheight('.eq-blocks');
 });
 
 
-jQuery(window).resize(function(){
+$(window).resize(function(){
   equalheight('.eq-blocks');
 });
 
@@ -73,16 +73,16 @@ function main() {
     /*====================================
     Show Menu on Book
     ======================================*/
-    jQuery(window).bind('scroll', function() {
-        var navHeight = jQuery(window).height() - 10;
-        if (jQuery(window).scrollTop() > navHeight) {
-            jQuery('.navbar-default').addClass('on');
+    $(window).bind('scroll', function() {
+        var navHeight = $(window).height() - 10;
+        if ($(window).scrollTop() > navHeight) {
+            $('.navbar-default').addClass('on');
         } else {
-            jQuery('.navbar-default').removeClass('on');
+            $('.navbar-default').removeClass('on');
         }
     });
 
-    jQuery('body').scrollspy({ 
+    $('body').scrollspy({ 
         target: '.navbar-default',
         offset: 10
     })
@@ -95,7 +95,7 @@ function main() {
     top -menu
     ======================================*/
 
-jQuery('#top-menu.navbar-default li:has(ul)').addClass('menu-item-has-children');
+$('#top-menu.navbar-default li:has(ul)').addClass('menu-item-has-children');
 
 
 
@@ -104,33 +104,33 @@ jQuery('#top-menu.navbar-default li:has(ul)').addClass('menu-item-has-children')
     ======================================*/
 
 
-jQuery(window).resize(function(){
+$(window).resize(function(){
 
-    jQuery('#home-banner .content').css({
+    $('#home-banner .content').css({
         position:'relative',
-        left: (jQuery(window).width() - jQuery('#home-banner .content').outerWidth())/2,
-        top: (jQuery(window).height() - jQuery('#home-banner .content ').outerHeight())/2
+        left: ($(window).width() - $('#home-banner .content').outerWidth())/2,
+        top: ($(window).height() - $('#home-banner .content ').outerHeight())/2
     });
 	
 	
-    jQuery('.entry-header .content, #page-banner .content').css({
+    $('.entry-header .content, #page-banner .content').css({
         position:'relative',
-        left: (jQuery(window).width() - jQuery('.entry-header .content, #page-banner .content').outerWidth())/3,
-        top: (jQuery(window).height() - jQuery('.entry-header .content, #page-banner .content ').outerHeight())/3
+        left: ($(window).width() - $('.entry-header .content, #page-banner .content').outerWidth())/3,
+        top: ($(window).height() - $('.entry-header .content, #page-banner .content ').outerHeight())/3
     });
 
 });
 
 // To initially run the function:
-jQuery(window).resize();
+$(window).resize();
 
 
 
 
 /*creating click event*/
-jQuery(document).ready(function(){
+$(document).ready(function(){
   
-   jQuery("#clients").owlCarousel({
+   $("#clients").owlCarousel({
   	 
   	      navigation : false, // Show next and prev buttons
   	      slideSpeed : 300,
@@ -151,7 +151,7 @@ jQuery(document).ready(function(){
   
   
   
-  jQuery("#testimonial").owlCarousel({
+  $("#testimonial").owlCarousel({
         navigation : false, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
@@ -164,9 +164,9 @@ jQuery(document).ready(function(){
 		
 		 function makePages() {
         $.each(this.owl.userItems, function(i) {
-            jQuery('#testimonial .owl-controls .owl-page').eq(i)
+            $('#testimonial .owl-controls .owl-page').eq(i)
                 .css({
-                    'background': 'url(' + jQuery(this).find('img').attr('src') + ')',
+                    'background': 'url(' + $(this).find('img').attr('src') + ')',
                     'background-size': 'cover'
                 })
         });
@@ -180,8 +180,8 @@ jQuery(document).ready(function(){
   	/*====================================
     Portfolio Isotope Filter
     ======================================*/
-   jQuery(window).load(function() {
-        var $container = jQuery('#lightbox');
+    $(window).load(function() {
+        var $container = $('#lightbox');
         $container.isotope({
             filter: '*',
             animationOptions: {
@@ -190,10 +190,10 @@ jQuery(document).ready(function(){
                 queue: false
             }
         });
-        jQuery('.cat a').click(function() {
-            jQuery('.cat .active').removeClass('active');
-            jQuery(this).addClass('active');
-            var selector = jQuery(this).attr('data-filter');
+        $('.cat a').click(function() {
+            $('.cat .active').removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).attr('data-filter');
             $container.isotope({
                 filter: selector,
                 animationOptions: {
