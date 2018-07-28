@@ -46,9 +46,9 @@ To view the examples, I recommend you download the [static site project](https:/
 
 Please zip up all your files and follow the idm250-{section number}_{userid}_{file name}
 
-**Example Submission**
+**Submission Example**
 ```
-- Idm250-001_pp455_hwk01.zip
+- idm250-001_pp455_hwk01.zip
 -- home_1280px.jpg
 -- home_768px.jpg
 -- home_320px.jpg
@@ -91,8 +91,10 @@ Release Info
 
 ## How to Submit
 Submit two links via Blackboard under one submission
-- Upload your zipped file via your Wordpress website and send me a direct link to download it. Example: `http://idm250.local/wp-content/uploads/2018/07/idm250-001-pp455-hwk01.zip`
-- URL to your Github release Example: `https://github.com/mrpaulphan/idm250/releases/tag/v0.0.1`
+- Upload your zipped file via your Wordpress website and send me a direct link to download it. 
+    - Example: `http://idm250.local/wp-content/uploads/2018/07/idm250-001-pp455-hwk01.zip`
+- URL to your Github release. 
+    - Example: `https://github.com/mrpaulphan/idm250/releases/tag/v0.0.1`
 
 
 
