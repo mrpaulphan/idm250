@@ -1,4 +1,4 @@
-#Midterm
+# Midterm
 Convert your designs into a fully functional responsive static site. Place your static site inside a folder on your server called `static`. Your url should look like `https://yourdomain.com/idm250/static/`. The only feature on your site that should not work is the search functionality. All link should work, content is real, and images should be high quality.
 
 ## Github Release
