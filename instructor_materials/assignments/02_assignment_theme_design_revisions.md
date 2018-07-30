@@ -21,7 +21,7 @@ Please zip up all your files and follow the idm250-{section number}_{userid}_{fi
 ```
 
 ## Project Overview
-Create a `readme.md` file at the root of your project. In this file, write a short description about your project and explain what it is (using [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)). This will help remind myself/others what your final project is. 
+Create a `readme.md` file at the root of your project. In this file, write a short description explaining your final project (using [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)). This will help remind myself/others what your final project is. 
 
 
 ## How to Submit
