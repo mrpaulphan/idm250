@@ -59,4 +59,3 @@ add_action('wp_enqueue_scripts', 'load_theme_assets');
 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 */
 add_theme_support('post-thumbnails');
-//require get_parent_theme_file_path( '/inc/customizer.php' );
