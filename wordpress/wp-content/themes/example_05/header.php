@@ -7,7 +7,7 @@
   <title><?php wp_title(); ?></title>
   <?php wp_head();?>
 </head>
-<body class="single <?php echo body_class();?>">
+<body <?php  echo body_class('single');?>>
   <header id="menutop">
     <!-- Navigation
     ==========================================-->

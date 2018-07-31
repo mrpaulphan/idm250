@@ -59,3 +59,20 @@ add_action('wp_enqueue_scripts', 'load_theme_assets');
 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 */
 add_theme_support('post-thumbnails');
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init()
+{
+    register_sidebar([
+        'name'          => 'Sidebar',
+        'id'            => 'sidebar',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ]);
+}
+add_action('widgets_init', 'arphabet_widgets_init');
