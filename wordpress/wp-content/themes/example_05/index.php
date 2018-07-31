@@ -1,4 +1,3 @@
-
 <?php 
 /**
  * The main template file
@@ -9,12 +8,8 @@
  * E.g., it puts together the home page when no home.php file exists.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
  */
 get_header(); ?>
-Index
+
+
 <?php get_footer(); ?>
