@@ -48,11 +48,11 @@ Github Release: https://github.com/mrpaulphan/idm250/releases/tag/v0.5.0
 Static Site: https://idm250.local/static
 
 Theme Templates
-Home: https://idm250.local/{template-url}
-General: https://idm250.local/{template-url}
-Sidebar: https://idm250.local/{template-url}
-Archive/Category (Post Listing): https://idm250.local/{template-url}
-Single (Post Detail): https://idm250.local/{template-url}
-Search: https://idm250.local/{template-url}
-404: https://idm250.local/{template-url}
+Home: https://{your-domain}/static/ 
+General: https://{your-domain}/static/{template-url}
+Sidebar: https://{your-domain}/static/{template-url}
+Archive/Category (Post Listing): https://{your-domain}/static/{template-url}
+Single (Post Detail): https://{your-domain}/static/{template-url}
+Search: https://{your-domain}/static/{template-url}
+404: https://{your-domain}/static/{template-url}
 ```
