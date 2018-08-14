@@ -19923,9 +19923,6 @@ aside li a:hover {
   font-style: italic;
 }
 
-.page #Blog-post {
-  padding: 120px 0 0;
-}
 
 .page.post-type-archive-jetpack-portfolio #Blog-post {
   padding: 60px 0 0;
@@ -22807,4 +22804,13 @@ Responsive queries
 .menu-footer-menu-container .sub-menu a {
   color: #B5BFD0;
   font-size: 14px;
+}
+
+.single .entry-header .content {
+display: flex;
+height: 100%;
+
+}
+.single .entry-header .content .container {
+align-self: center;
 }

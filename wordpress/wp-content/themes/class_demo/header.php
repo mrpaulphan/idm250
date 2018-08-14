@@ -12,7 +12,7 @@
 <!-- Close Wordpress Header Code -->
 </head>
 
-<body <?php body_class();?> >
+<body <?php body_class('single');?> >
 <header id="menutop"> 
   
   <!-- Navigation

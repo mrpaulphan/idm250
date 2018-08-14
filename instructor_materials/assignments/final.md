@@ -20,8 +20,8 @@ Release Info
 - Tag Version = “v1.0.0”
 - Title = “v1.0.0”
 
-## Grading checklist
-- Responsive design
+## Grading checklist (40 points)
+- [] Responsive design
     - All pages are responsive and working at all screen sizes
 - Functionality
     - All functionality (drop downs, menus, videos, lightboxes, carousels, etc…) are working

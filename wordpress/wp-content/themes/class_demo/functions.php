@@ -31,7 +31,6 @@ function load_theme_assets()
     wp_enqueue_script('way', get_template_directory_uri() . '/dist/js/jquery.waypoints.min.js ');
     wp_enqueue_script('main', get_template_directory_uri() . '/dist/js/main.js');
     wp_enqueue_script('wow', get_template_directory_uri() . '/dist/js/wow.min.js ');
-    wp_enqueue_script('script', get_template_directory_uri() . '/dist/js/script.js ');
 }
 add_action('wp_enqueue_scripts', 'load_theme_assets');
 
@@ -51,3 +50,18 @@ function register_menus()
 }
 
 add_action('init', 'register_menus');
+
+/**
+ * Register our sidebars and widgets into our theme
+ *
+ * @link https://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+function register_widgets()
+{
+    register_sidebar([
+        'name'          => 'Blog Sidebar',
+        'id'            => 'sidebar',
+    ]);
+}
+
+add_action('widgets_init', 'register_widgets');

@@ -2,7 +2,10 @@
 Convert your designs into a fully functional responsive static site. Place your static site inside a folder on your server called `static`. Your url should look like `https://yourdomain.com/idm250/static/`. All template pages are required as well as any other pages you want to include into your final project. 
 
 ## Not Required
-The only feature on your site that should not work is the search functionality. All link should work, content is real, and images should be high quality. All post can link to the same `single` (post detail) page template. No need to make a different page for every post. For example, if you have 8 projects listed, you can link them to 1 single project detail page. 
+- Sidebar/widget section should be coded out but does not have to function/link to any page. 
+- Search functionality does not need to work.
+
+All link should work, content is real, and images should be high quality. All post can link to the same `single` (post detail) page template. No need to make a different page for every post. For example, if you have 8 projects listed, you can link them to 1 single project detail page. 
 
 ## Github Release
 Make sure your theme has been pushed to your repository. Once you've done that, you will need to create a release for this. 
