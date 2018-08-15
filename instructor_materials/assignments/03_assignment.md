@@ -15,7 +15,7 @@ Inside your theme folder, `{your-project-root-folder}/wp-content/themes`, create
 
 Make sure you fill out your [style.css](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/style.css) with your information. 
 
-Once that is done, go to Dashboard and click on `Appearance -> Themes`. Go to theme you just installed (at mouse-over you will see the Activate button — click on it).
+Once that is done, go to your dashboard and click on `Appearance -> Themes`. Go to theme you just installed (at mouse-over you will see the Activate button — click on it).
 
 ### Dynamic Header
 - Create a [header.php](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/header.php) file at the root of your theme
