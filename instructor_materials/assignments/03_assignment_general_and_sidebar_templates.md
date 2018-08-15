@@ -1,14 +1,14 @@
 # Template Implementation
-The goal of this assignment is to take your static website you built for your midterm and convert it to use PHP + WordPress to interact with the database and dynamic output data. 
+The goal of this assignment is to take your static website you built for your midterm and convert it to use PHP + WordPress to interact with the database and dynamically output data. 
 
 ## Assignment Overview
-1. Create Theme
-2. Dynamic Header
-3. Dynamic Menu
-4. Dynamic Footer
-5. General Styles Template
-6. Create Tag/Release
-7. Deploy Code
+1. [Create Theme](#create-a-theme-folder)
+2. [Dynamic Header](#dynamic-header)
+3. [Dynamic Menu](#dynamic-menu)
+4. [Dynamic Footer](#dynamic-footer)
+5. [General Styles Template](#general-styles-template)
+6. [Create Tag/Release](#creating-a-tag)
+7. [Deploy Code](#deploy-code)
 
 ### Create a theme folder
 Inside your theme folder, `{your-project-root-folder}/wp-content/themes`, create a folder and name it whatever you want. Make sure these the index.php and style.css file are included (Theme should now display under your dashboard).
