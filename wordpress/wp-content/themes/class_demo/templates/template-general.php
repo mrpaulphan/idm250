@@ -1,8 +1,4 @@
 <?php
-/*
-Template Name: General
-*/
-
 get_header(); ?>
 <!--blog body-->
 <div id="Blog-post"> 

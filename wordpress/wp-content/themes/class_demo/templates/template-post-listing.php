@@ -40,16 +40,28 @@ get_header(); ?>
               <article class="col-md-12 wow fadeInUp">
                 <header class="entry-header">
                   <span class="date-article">
-                    <i class="fa fa-calendar-o"></i> JULY 13 2017</span>
+                    <i class="fa fa-calendar-o"></i><?php the_date('F j, Y'); ?></span>
                   <a href="<?php the_permalink(); ?>">
-                    <img src="dist/img/a-1.jpg" class="img-responsive">
+                    <?php
+                    // Check to see if the post has a featured image
+                    if (has_post_thumbnail()): ?>
+                      <?php the_post_thumbnail();?>
+                    <?php else: ?>
+                      <img src="https://placehold.it/1280x720" alt="">
+                    <?php endif; ?>
                   </a>
                   <span class="byline">
                     <span class="author vcard">
-                      <a href="<?php the_permalink(); ?>">
-                        <i class="fa fa-folder-o"></i> Business &bull; Industry</a>
-                      <a href="<?php the_permalink(); ?>">
-                        <i class="fa fa-user-o"></i> Rijo</a>
+                      <?php 
+                        // Get categories associated with this post
+                        $categories = get_the_category();
+                      ?>
+                      <p>
+                        <i class="fa fa-folder-o">
+                      <?php foreach ($categories as $category) : ?>
+                        <a href="<?php echo get_category_link($category); ?>"><?php echo $category->name; ?></a>
+                      <?php endforeach; ?>
+                      </p>
                     </span>
                   </span>
                   <a href="<?php the_permalink(); ?>">

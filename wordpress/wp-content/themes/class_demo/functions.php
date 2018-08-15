@@ -65,3 +65,17 @@ function register_widgets()
 }
 
 add_action('widgets_init', 'register_widgets');
+
+/**
+ * Add post thumbnail support to theme
+ * @link https://codex.wordpress.org/Post_Thumbnails
+ */
+add_theme_support('post-thumbnails');
+
+/**
+ * Change the default "default template" name given for wordpress.
+ * @link https://codex.wordpress.org/Plugin_API/Filter_Reference/default_page_template_title
+ */
+add_filter('default_page_template_title', function () {
+    return __('General');
+});
