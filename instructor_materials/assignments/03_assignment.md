@@ -15,7 +15,7 @@ Inside your theme folder, `{your-project-root-folder}/wp-content/themes`, create
 
 Make sure you fill out your [style.css](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/style.css) with your information. 
 
-Once that is done, go to your dashboard and click on `Appearance -> Themes`. Go to theme you just installed (at mouse-over you will see the Activate button — click on it).
+Once that is done, go to your dashboard and click on `Appearance -> Themes`. Go to the theme you just installed (at mouse-over you will see the Activate button — click on it).
 
 ### Dynamic Header
 - Create a [header.php](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/header.php) file at the root of your theme
@@ -23,7 +23,7 @@ Once that is done, go to your dashboard and click on `Appearance -> Themes`. Go 
   
 ### Dynamic Menu
 The menu on your website should be dynamiclly driven through Wordpress. 
-- Create the pages you need through the Wordpress dashbaord.Here's a [tutorial](https://codex.wordpress.org/WordPress_Menu_User_Guide) on how to do that 
+- Create the pages you need through the Wordpress dashbaord. Here's a [tutorial](https://codex.wordpress.org/WordPress_Menu_User_Guide) on how to do that 
 - [Register your menus](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/functions.php#L37)
 - [Display your menu](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/header.php#L68)
 
@@ -54,13 +54,11 @@ Once complete, copy your theme over to your remote server into the same exact sp
 
 ## Submission
 - Link to your `v0.6.0` release
-- Link to your static site + templates
+- Link to your WordPress website general styles template page
 
 ### Example Submission Format
 ```
 Github Release: https://github.com/mrpaulphan/idm250/releases/tag/v0.6.0
-
-Wordpress Site: https://{your-domain}.com/idm250
 
 General Styles Page: https://{your-domain}.com/idm250/{template-url}
 ```
