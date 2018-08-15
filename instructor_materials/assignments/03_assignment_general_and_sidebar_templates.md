@@ -11,7 +11,7 @@ The goal of this assignment is to take your static website you built for your mi
 7. [Deploy Code](#deploy-code)
 
 ### Create a theme folder
-Inside your theme folder, `{your-project-root-folder}/wp-content/themes`, create a folder and name it whatever you want. I usually title folder to match the domain (MrPaulPhan.com -> mrpaulphan or cnn.com -> cnn). Make sure these the index.php and style.css file are included (Theme should now display under your dashboard).
+Inside your theme folder, `{your-project-root-folder}/wp-content/themes`, create a folder and name it whatever you want. I usually title the folder to match the domain (MrPaulPhan.com -> mrpaulphan or cnn.com -> cnn). Make sure that this theme includes `index.php` and `style.css`. (Theme should now display under your dashboard).
 
 Make sure you fill out your [style.css](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/style.css) with your information. 
 
