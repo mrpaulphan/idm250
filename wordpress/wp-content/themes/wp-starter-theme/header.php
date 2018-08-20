@@ -18,7 +18,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class();?>
+<body <?php body_class();?> >
 <header>
   <?php wp_nav_menu(['theme_location'  => 'main']); ?>
 </header>
