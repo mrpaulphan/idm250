@@ -3,8 +3,8 @@ The goal of this assignment is to take your static website you built for your mi
 
 ## Assignment Overview
 1. [404 Template](#404-template)
-2. [Post Listing Template](#dynamic-header)
-3. [Sidebar Template](#dynamic-menu)
+2. [Post Listing Template](#post-listing-template)
+3. [Sidebar Template](#sidebar-template)
 4. [Create Tag/Release](#creating-a-tag)
 5. [Deploy Code](#deploy-code)
 
