@@ -44,15 +44,15 @@ Release Info
 
 ### Example Submission Format
 ```
-Github Release: https://github.com/mrpaulphan/idm250/releases/tag/v0.5.0
-Static Site: https://idm250.local/static
+Github Release: {github-repo-url}/releases/tag/v0.5.0
+Static Site: {protocol}://{your-domain}/static
 
 Theme Templates
-Home: https://{your-domain}/idm250/static/ 
-General: https://{your-domain}/idm250/static/{template-url}
-Sidebar: https://{your-domain}/idm250/static/{template-url}
-Archive/Category (Post Listing): https://{your-domain}/idm250/static/{template-url}
-Single (Post Detail): https://{your-domain}/idm250/static/{template-url}
-Search: https://{your-domain}/idm250/static/{template-url}
-404: https://{your-domain}/idm250/static/{template-url}
+Home: {protocol}://{your-domain}/idm250/static/ 
+General: {protocol}://{your-domain}/idm250/static/{template-url}
+Sidebar: {protocol}://{your-domain}/idm250/static/{template-url}
+Archive/Category (Post Listing): {protocol}://{your-domain}/idm250/static/{template-url}
+Single (Post Detail): {protocol}://{your-domain}/idm250/static/{template-url}
+Search: {protocol}://{your-domain}/idm250/static/{template-url}
+404: {protocol}://{your-domain}/idm250/static/{template-url}
 ```
