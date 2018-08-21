@@ -60,7 +60,7 @@ Once complete, copy your theme over to your remote server into the same exact sp
 ```
 Github Release: https://github.com/mrpaulphan/idm250/releases/tag/v0.6.0
 
-General Styles Page: https://{your-domain}.com/idm250/{template-url}
+General Styles Page: https://{your-domain}/idm250/{template-url}
 ```
 
 
