@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://www.w3schools.com/cssref/tryit.asp?filename=trycss_grid-column2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 30px;
+}
+.item1 {
+//grid-column: 1 / 4;
+}
+</style>
+</head>
+<body contenteditable="false">
+
+<h1>The grid-column Property</h1>
+
+<p>Use the <em>grid-column</em> property to specify on which column-line to start the item, and which column-line to end the item.</p>
+
+<p>Item1 will start on column-line 1, and end on column-line 3:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+</div>
+
+
+
+</body></html>

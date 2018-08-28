@@ -55,11 +55,20 @@
         
         <!--search-cart-block -->
         <div class="search-cart-block"> 
-          <!--search form-->
-          
-          <form method="get" action="/search.html" id="search">
-            <input name="q" type="text" size="40" placeholder="Search..." />
-          </form>
+          <!--search form-->  
+          <?php 
+          /**
+           * Will first attempt to locate the searchform.php file in either the child or the parent, then load it.
+           * If it doesn’t exist, then the default search form will be displayed.
+           * The default search form is HTML, which will be displayed.
+           * There is a filter applied to the search form HTML in order to edit or replace it. The filter is ‘get_search_form’.
+           * This will automatically go to /search. You can edit this template by creating a search.php.
+           *
+           * @link https://developer.wordpress.org/reference/functions/get_search_form/
+           *
+           */
+          get_search_form();
+          ?>
           <!--/search form-->
           
         </div>

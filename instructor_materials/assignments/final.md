@@ -21,7 +21,7 @@ Release Info
 - Title = “v1.0.0”
 
 ## Grading checklist (40 points)
-- [] Responsive design
+- Responsive design
     - All pages are responsive and working at all screen sizes
 - Functionality
     - All functionality (drop downs, menus, videos, lightboxes, carousels, etc…) are working
@@ -32,10 +32,6 @@ Release Info
     - Content and design clearing indicate the purpose of the website and it’s goal
     - Padding and Space is consistent
     - There is a clear visual hierarchy
-- Code Quality
-    Site is smartly coded using modules for repeating code segments
-    Content is NOT STATIC and can be updated through the WordPress dashboard
-    Code is clean. White spaces, comments, and proper indentation is used in the files.
 - Theme Requirements
     - Dynamic Navigation
     - Required Templates
@@ -46,6 +42,20 @@ Release Info
         - Search
         - Archive/Category Page
         - 404 Page
-    
+- WordPress Functions
+    - Required functions:
+        - `wp_head()`
+        - `wp_footer()`
+        - `body_classes()`
+        - `wp_enqueue_script()`
+- Code Quality
+    Site is smartly coded using modules for repeating code segments
+    Content is NOT STATIC and can be updated through the WordPress dashboard
+    Code is clean. White spaces, comments, and proper indentation is used in the files.
+
+## Extra Credit
+- Add Favicon
+- Add custom logo to login screen
+- 
 ## Submission
 - Link to your `v1.0.0` release
