@@ -27,35 +27,57 @@ Release Info
     - All functionality (drop downs, menus, videos, lightboxes, carousels, etc…) are working
 - Design & Content
     - Images are final and high quality
-    - All content is real and final
+    - All content is **real** and final
     - All content is properly labels, makes sense, and purposeful
     - Content and design clearing indicate the purpose of the website and it’s goal
     - Padding and Space is consistent
     - There is a clear visual hierarchy
-- Theme Requirements
-    - Dynamic Navigation
-    - Required Templates
-        - Home
-        - General
-        - Post Listing
-        - Post Detail
-        - Search
-        - Archive/Category Page
-        - 404 Page
-- WordPress Functions
-    - Required functions:
-        - `wp_head()`
-        - `wp_footer()`
-        - `body_classes()`
-        - `wp_enqueue_script()`
+    - Included `wp_head()` in your header.php file
+    - Included `wp_footer()` in your footer.php file
+    - Included `body_class()` to the body element
+    - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()`
+    - Theme Requirements
+        - Dynamic Navigation using `wp_nav_menu()`
+        - Required Templates
+            - Home
+            - General
+            - Post Listing
+            - Post Detail
+            - Search
+            - Archive/Category Page
+            - 404 Page
+        - All other pages (about, contact, etc...) that exist on your site must be created and the data must be driven through WordPress. 
 - Code Quality
     Site is smartly coded using modules for repeating code segments
-    Content is NOT STATIC and can be updated through the WordPress dashboard
+    Content is **NOT STATIC** and can be updated through the WordPress dashboard
     Code is clean. White spaces, comments, and proper indentation is used in the files.
 
-## Extra Credit
-- Add Favicon
-- Add custom logo to login screen
-- 
+## Extra Credit (.5 Point Each)
+- Add favicon
+- Add custom logo to login screen (`/wp-admin`)
+- Using `add_image_size()` and display custom image sizes
+- Add custom logo to WordPress theme customizer and display it
+  
+
 ## Submission
 - Link to your `v1.0.0` release
+
+### Example Submission Format
+```
+Releases
+--
+Github Release: https://github.com/mrpaulphan/idm250/releases/tag/v1.0.0
+
+Templates
+--
+404 Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Home Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Sidebar Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Post Listing Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Post Detail Template: {protocol}://{your-domain}/idm250/{this-template-url}
+General Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Search Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Archive/Category Page Template: {protocol}://{your-domain}/idm250/{this-template-url}
+404 Page Template: {protocol}://{your-domain}/idm250/{this-template-url}
+
+```

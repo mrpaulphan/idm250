@@ -72,66 +72,38 @@
             <!--/section-title-->
             <div class="clearfix"></div>
             <div class="works">
-                <ul class="grid wow zoomIn">
-                    <?php
-/*
-*  Loop through post objects (assuming this is a multi-select field) ( setup postdata )
-*  Using this method, you can use all the normal WP functions as the $post object is temporarily initialized within the loop
-*  Read more: http://codex.wordpress.org/Template_Tags/get_posts#Reset_after_Postlists_with_offset
-*/
+                <?php
+                /*
+                *  Loop through post objects (assuming this is a multi-select field) ( setup postdata )
+                *  Using this method, you can use all the normal WP functions as the $post object is temporarily initialized within the loop
+                *  Read more: http://codex.wordpress.org/Template_Tags/get_posts#Reset_after_Postlists_with_offset
+                */
 
-$post_objects = get_field('work_featured_projects');
+                $post_objects = get_field('work_featured_projects');
 
-if ($post_objects): ?>
-  <ul>
-      <?php foreach ($post_objects as $post): // variable must be called $post (IMPORTANT)?>
-      <?php setup_postdata($post); ?>
-      <li>
-          <figure>
-              <?php
-
-              if (has_post_thumbnail()): ?>
-              <?php the_post_thumbnail();?>
-              <?php else: ?>
-              <img src="https://placehold.it/1280x720" alt="">
-              <?php endif; ?>
-              <figcaption>
-                  <div class="caption-content">
-                      <h6>
-                          <?php the_title()?>
-                      </h6>
-                      <a href="#">Design</a> <a href="#">brand</a>
-                      <ul class="work-more">
-                          <li><a href="<?php the_permalink();?>"><i class="fa fa-link"></i></a></li>
-                      </ul>
-                  </div>
-              </figcaption>
-          </figure>
-      </li>
-      <?php endforeach; ?>
-                    </ul>
-                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly?>
-                    <?php endif;
-?>
-
-
-
-
-
-                    <li>
-                        <figure><img src="dist/img/08-screenshot.jpg" alt="Screenshot 01">
+                if ($post_objects): ?>
+                    <ul class="grid wow zoomIn">
+                    <?php foreach ($post_objects as $post): // variable must be called $post (IMPORTANT)?>
+                        <?php setup_postdata($post); ?>
+                        <li>
+                        <figure>
+                            <?php the_post_thumbnail();?>
                             <figcaption>
                                 <div class="caption-content">
-                                    <h6>Optimised For Design</h6>
+                                    <h6><?php the_title(); ?></h6>
                                     <a href="#">Design</a> <a href="#">brand</a>
                                     <ul class="work-more">
-                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                        <li><a href="<?php the_permalink();?>"><i class="fa fa-link"></i></a></li>
                                     </ul>
                                 </div>
                             </figcaption>
                         </figure>
-                    </li>
-                </ul>
+                        </li>
+                    <?php endforeach; ?>
+                    </ul>
+                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly?>
+                <?php endif;?>
+
                 <div class="clearfix"></div>
                 <a href="portfolio.html" class="more-links">View All Projects</a>
             </div>
