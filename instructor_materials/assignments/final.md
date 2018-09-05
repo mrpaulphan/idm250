@@ -21,7 +21,7 @@ Release Info
 - Title = “v1.0.0”
 
 ## Grading checklist (40 points)
-- Responsive design
+- Responsive desi
     - All pages are responsive and working at all screen sizes
 - Functionality
     - All functionality (drop downs, menus, videos, lightboxes, carousels, etc…) are working
@@ -78,6 +78,4 @@ Post Detail Template: {protocol}://{your-domain}/idm250/{this-template-url}
 General Template: {protocol}://{your-domain}/idm250/{this-template-url}
 Search Template: {protocol}://{your-domain}/idm250/{this-template-url}
 Archive/Category Page Template: {protocol}://{your-domain}/idm250/{this-template-url}
-404 Page Template: {protocol}://{your-domain}/idm250/{this-template-url}
-
 ```
