@@ -21,7 +21,7 @@ Release Info
 - Title = “v1.0.0”
 
 ## Grading checklist (40 points)
-- Responsive desi
+- Responsive desin
     - All pages are responsive and working at all screen sizes
 - Functionality
     - All functionality (drop downs, menus, videos, lightboxes, carousels, etc…) are working
