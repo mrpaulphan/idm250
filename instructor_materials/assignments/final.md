@@ -43,8 +43,7 @@ Release Info
             - General
             - Post Listing
             - Post Detail
-            - Search
-            - Archive/Category Page
+            - Search Results
             - 404 Page
         - All other pages (about, contact, etc...) that exist on your site must be created and the data must be driven through WordPress. 
 - Code Quality
@@ -76,6 +75,5 @@ Sidebar Template: {protocol}://{your-domain}/idm250/{this-template-url}
 Post Listing Template: {protocol}://{your-domain}/idm250/{this-template-url}
 Post Detail Template: {protocol}://{your-domain}/idm250/{this-template-url}
 General Template: {protocol}://{your-domain}/idm250/{this-template-url}
-Search Template: {protocol}://{your-domain}/idm250/{this-template-url}
-Archive/Category Page Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Search Template: {protocol}://{your-domain}/idm250/{this-uri-with-the-search-query} (?q={searched word})
 ```
