@@ -1,5 +1,10 @@
-instructor_materials/resources/*
+instructor_materials/resources/
 
+instructor_materials/assignments/02_assignment.md
+instructor_materials/assignments/03_assignment.md
+instructor_materials/assignments/04_assignment.md
+instructor_materials/assignments/final.md
+instructor_materials/assignments/midterm.md
 
 wordpress/wp-config.php
 wordpress/wp-content/advanced-cache.php

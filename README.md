@@ -1,19 +1,18 @@
 # IDM250: Content Management Systems | Syllabus
 
 ### Course Description
-Students learn the basic principles of PHP; set up a content management system and develop a custom template structure. The class will lightly focus on cutting-edge HTML5/CSS3 techniques, including: how to plan, organize, and maintain effective stylesheets, build liquid, elastic, and hybrid layouts.
+Students learn the basic principles of PHP; set up a content management system and develop a custom template structure. The class will lightly focus on cutting-edge HTML5/CSS3 techniques, including how to plan, organize, and maintain effective stylesheets, build liquid, elastic, and hybrid layouts.
 
 ### Prerequisites
 - IDM 222
 - IDM 232
-- Self hosted web domain
+- Self-hosted web domain
 
-### Instructor 
+### Instructor
 Paul Phan
-
 E-mail: pp455@drexel.edu
-
-Meetings available by appointment with 48 hour notice
+Meetings Available by appointment with 48-hour notice
+Calendar: https://calendar.google.com/calendar/embed?src=impactsix.com_sou7quc7hfbbcr3ni3v2fap9lk%40group.calendar.google.com&ctz=America%2FNew_York
 
 ### Required Reading:
 - Supplied pdfs
@@ -38,7 +37,7 @@ Each class session should run as follows:
 ### Grading Policy
 Grading is based upon attendance, class participation, homework assignments and progression in the medium.
 
-Students who are on their laptops or cellphones during class critiques will lose points on their own assignment.
+Students who are on their laptops or cellphones during class critiques will lose points on their own assignments.
 
 #### Homework Assignments
 - 1st late = -15%
@@ -55,7 +54,7 @@ Students are allowed one unexcused absence. If a student has more than one unexc
 
 Note that an excused absence is defined as one that is the result of a condition or circumstance beyond the student’s control, such as illness, a family crisis or emergency, or some other serious and important personal circumstance. An absence will be excused only if there is documentation verifying the circumstances that caused the absence.
 
-One total point will be removed for every time a student arrives late to class. If a student is more than 15 minutes late, they will be considered absent. 
+One total point will be removed every time a student arrives late to class. If a student is more than 15 minutes late, they will be considered absent. 
 
 The dates your assignments are due are indicated clearly in this course outline. Assignments are due on those dates unless you have submitted a written request for an extension at least ONE class before the assignment is due. Late assignments lose 50%. After 1 week, late assignments will no longer be accepted and will result in a zero. 
 

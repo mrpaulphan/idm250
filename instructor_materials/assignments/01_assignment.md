@@ -1,4 +1,4 @@
-## Final Project Design
+## Setting up 
 
 Design your final project with the idea of conversion for use with a database driven Content Management System. All of your static web page images should look exactly like you want your website pages to look like when the theme is complete.
 
@@ -20,7 +20,7 @@ Create/Design the following templates:
         - Paragraphs
         - Pull Quotes
         - Links
-        - Images with caption 
+        - Images with caption
         - Video
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/static_site/page.html)
     - Design a comp at 1280px wide
