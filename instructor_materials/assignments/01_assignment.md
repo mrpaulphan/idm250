@@ -1,103 +1,39 @@
-## Setting up 
+## Server Website Setup
 
-Design your final project with the idea of conversion for use with a database driven Content Management System. All of your static web page images should look exactly like you want your website pages to look like when the theme is complete.
+## Overview
+Setup WordPress site on your server and have a live theme activated. Visiting your domain should lead me to a blank that says "IDM250" on it.
 
-If you’re using an existing website you’ve created, polish up your design and include any missing pages/templates
+Setting up WP on your server
+- Create a folder called idm250 on your server
+	Example: `{domain}/idm250`
+- Create a Database
+  - Blueshost.com -> Advanced tab ->   MySQL Databases 
+  -  Create new database and name it whatever you want. Mine is called "idm250_wp"
+  -  Go back to Blueshost.com -> Advanced tab ->   MySQL Databases 
+  -  Go down to users
+  -  You can either create a new user or choose an existing user 
+  -  This will be the database credentials for you wp.config file so don't forget this!  
+-  Creating a new user
+	- Hit create user
+	- Go back
+   - Go to add "user to database"
+   -  Add the user you created to the new database 
+   -  Grant all privilege 
+   -  Save 
+- Check DB
+  -  Go back to Blueshost.com -> Advanced tab ->   PHPmyAdmin
+  - Check to see if your new DB has exist
 
+Upload your local code to the idm250 folder you created
+once that's finished, download the wp-config file from your server and edit that with your new DB Credentials (credentials you created above) and reupload it
+update the values in `DB_NAME`, `DB_USER`, `DB_PASSWORD`
+- Go to your URL `{your-domain}/idm250`. If you put in the correct credentials, you will go through the WP installation screen. If you are getting "Error connecting to database", your credentials are wrong.
+- Make sure you save your login info you created during the installation screen.
 
-### Templates
-Create/Design the following templates:
-- Home (Front Page)
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master/static_site/index.html)
-    - Design a comp at 1280px, 768px, 320px  wide
-- General Styles (Page)
-    - This page should include the following components styles:
-        - Headings 1 - 6
-        - Unordered list
-        - Ordered List
-        - Tables
-        - Buttons
-        - Paragraphs
-        - Pull Quotes
-        - Links
-        - Images with caption
-        - Video
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master/static_site/page.html)
-    - Design a comp at 1280px wide
-- General Styles w/ Sidebar (Page)
-    - This page should be similar to the general styles page but have a sidebar
-    - Include the same components you see on [this] page here in your comp. 
-    - Design a comp at 1280px wide 
-- Post Listing (Archive)
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master/static_site/blog.html)
-    - Design a comp at 1280px wide
-- Post Detail (Single)
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master/static_site/single.html)
-    - Design a comp at 1280px wide
-- Search Results (Search)
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master/static_site/search.html)
-        Design a comp at 1280px wide
-- 404
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master/static_site/404.html)
-    - Design a comp at 1280px wide
-
-
-To view the examples, I recommend you download the [static site project](https://github.com/mrpaulphan/idm250/blob/master/static_site) and open it up in  your browser. 
-
-Please zip up all your files and follow the idm250-{section number}_{userid}_{file name}
-
-**Submission Example**
-```
-- idm250-001_pp455_hwk01.zip
--- home_1280px.jpg
--- home_768px.jpg
--- home_320px.jpg
--- general_1280px.jpg
--- sidebar_1280px.jpg
--- search_1280px.jpg
--- 404_1280px.jpg
--- single_1280px.jpg
--- archive_1280px.jpg
-```
-
-
-## Github Release
-Make sure your the wordpress starter theme has been pushed to github. Once you've done that, you will need to create a release for this. 
-
-### Creating a tag
-
-Here's a [link](https://git-scm.com/book/en/v2/Git-Basics-Tagging) on how to create a git tag. Using your terminal/command line, get inside the folder where your project files are kept: cd `/path/to/my/codebase`. You want to 
-1. Create a tag `git tag -l "v0.0.1"`
-2. Annotate the tag `git tag -a v0.0.1 -m "v0.0.1"`
-3. push the tag `git push origin v0.0.1`
-
-### Creating a release
-Use this article [here](https://help.github.com/articles/creating-releases/me) to create a github release. 
-
-Release Info
-- Tag Version = “v0.0.1”
-- Title = “v0.0.1”
-- Description = "Starter Files"
-
-
-## Reading
-[Build Your Own Wicked WordPress Themes by Allan Cole Collingwood, Vic. : SitePoint Pty. Ltd., 2010](http://www.library.drexel.edu/cgi-bin/r.cgi?url=http://library.books24x7.com/library.asp?^B&bookid=41318)
-- Ch.2 Planning Your Theme
-- Ch. 3 Theme Design 101
-
-## Project Overview
-- Create a `readme.md` file at the root of your project. In this file, write a short description about your project and explain what it is (using [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)). This will help remind myself/others what your final project is. 
-
+- Create starter theme
+  - Copy your local starter theme to your servers in wp-content/themes/
+- Go to `{your-domain}/wp-admin` to login
+- Go to Appearance > themes and activate your theme that you uploaded
 
 ## How to Submit
-Submit two links via Blackboard under one submission
-- Upload your zipped file via your Wordpress website and send me a direct link to download it. 
-    - Example: `http://idm250.local/wp-content/uploads/2018/07/idm250-001-pp455-hwk01.zip`
-- URL to your Github release. 
-    - Example: `https://github.com/mrpaulphan/idm250/releases/tag/v0.0.1`
-
-
-
-
-
-
+Submit a link to your new WordPress site under Assignment 1 on blackboard. When you visit the link, I should see a blank screen with just the text idm250 on it. I should also be able to go to your {domain}/idm250/wp-admin and see a WP login screen. 
