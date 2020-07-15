@@ -1,3 +1,3 @@
 <?php get_header();?>
-Body Content
+Archive Page
 <?php get_footer(); ?>

@@ -1,3 +1,3 @@
 <?php get_header();?>
-Body Content
+Search Page
 <?php get_footer(); ?>
