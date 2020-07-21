@@ -5,6 +5,16 @@
  * @link - https://codex.wordpress.org/Functions_File_Explained
  * @return void
  */
+
+/*
+ * Enable support for Post Thumbnails on posts and pages.
+ * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+*/
+function add_post_thumbnails_support() {
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'add_post_thumbnails_support');
+
 /**
  * Include any styles into the site the proper way
  *
