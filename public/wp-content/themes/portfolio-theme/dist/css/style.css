@@ -49,14 +49,31 @@ table {
 	max-width: 200px;
 }
 
-.main-nav__group {
+.menu {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.main-nav__link {
+.menu-item {
 	display: block;
 	padding: 0 10px;
+}
+.menu-item a {
+	color: black;
+	text-decoration: none;
+}
+.menu-item:hover {
+	border-bottom: 1px solid red;
+}
+.menu-item:hover .sub-menu {
+	display: block;
+}
+.sub-menu {
+	display: none;
+}
+
+.current-menu-item {
+	border-bottom: 1px solid red;
 }
 
 .header {
@@ -85,4 +102,35 @@ table {
 }
 .page-builder {
 	font-size: 16px;
+}
+
+
+.split-sidebar {
+	display: flex;
+}
+.split-sidebar .column-main {
+	width: 70%;
+}
+.split-sidebar .column-sidebar {
+	width: 30%;
+}
+
+
+.widgettitle {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer {
+	padding: 50px 0;
+	background-color: gray;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-menu {
+	width: 40%;
+}
+.social-menu {
+	width: 40%;
 }
