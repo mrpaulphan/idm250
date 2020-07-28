@@ -33,6 +33,16 @@ The menu on your website should be dynamically driven through WordPress.
 ### Deployment
 Once complete, copy your theme over to your remote server into the same exact spot. Assuming that `public_html` is the root of your server, the theme should be copied into `public_html/idm250/wp-content/themes/`. Login to your WordPress site and copy your local menu and pages.
 
+#### Avoiding  DB conflicts
+To avoid conflicts when exporting and importing your DB, add these lines of code to your `wp-config.php` file right under `define( 'WP_DEBUG', false );` on **both** your **local** and **production** environment
+
+```
+define( 'WP_HOME', 'http://example.com' );
+define( 'WP_SITEURL', 'http://example.com' );
+```
+
+Replace `http://example.com` with your domain
+
 
 ## Submission
 - Link to your homepage (front-page.php) on learn
