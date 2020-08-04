@@ -40,6 +40,10 @@ table {
 	padding: 0 3%;
 }
 
+.header {
+	padding: 20px 0;
+	border-bottom: 1px solid black;
+}
 .header__content {
 	display: flex;
 	justify-content: space-between;

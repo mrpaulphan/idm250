@@ -1,3 +1,3 @@
 <?php get_header();?>
-Body Content
+  This is index.php. Should be use as the default page
 <?php get_footer(); ?>
