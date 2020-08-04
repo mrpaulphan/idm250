@@ -10,7 +10,6 @@
             <?php the_content(); ?>
           </div>
         </div>
-
         <?php get_sidebar(); ?>
 
     </div>

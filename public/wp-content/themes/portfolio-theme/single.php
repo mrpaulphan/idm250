@@ -27,7 +27,6 @@
         </div>
 
         <?php get_sidebar(); ?>
-
     </div>
   <?php endwhile; ?>
 </main>
