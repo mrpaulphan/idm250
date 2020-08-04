@@ -108,7 +108,7 @@ table {
 	font-size: 16px;
 }
 
-
+/* LAYOUTS */
 .split-sidebar {
 	display: flex;
 }
@@ -117,6 +117,20 @@ table {
 }
 .split-sidebar .column-sidebar {
 	width: 30%;
+}
+
+.split-3 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.split-3 .column {
+	width: 30%;
+	padding: 0 10px;
+}
+
+.wp-post-image {
+	width: 100%;
+	height: auto;
 }
 
 
