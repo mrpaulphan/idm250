@@ -17,12 +17,6 @@ require get_template_directory() . '/lib/required.php';
 require get_template_directory() . '/lib/setup.php';
 
 /**
-<<<<<<< HEAD
- * Theme Custom Post Types
- */
-require get_template_directory() . '/lib/custom-post-types.php';
-=======
  * Register custom post types
  */
 require get_template_directory() . '/lib/custom-post-type.php';
->>>>>>> @{-1}
