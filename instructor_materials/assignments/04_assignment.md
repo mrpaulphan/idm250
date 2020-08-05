@@ -1,54 +1,58 @@
-# Dynamic Pages and Posts Implementation
-The goal of this assignment is to take your 
+# Assignment Overview
+The goal of this assignment is to take your Post Detail (single.php) design and develop it in WP.
 
-## Assignment Overview
-1. [404 Template](#404-template)
-2. [Post Listing Template](#post-listing-template)
-3. [Sidebar Template](#sidebar-template)
-4. [Create Tag/Release](#creating-a-tag)
-5. [Deploy Code](#deploy-code)
+## Single Page
 
-### 404 Template
-You should have coded a 404 template for your midterm. Convert this into a [WordPress Template](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/templates/template-404.php). The content for this page should be coming from the CMS.
+#### If You have a Blog
+Using [single.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/single.php) as an example, add this to your template and create a page that will dynamically pull in the page title, and page builder. Feel free to add any other additional content such as date, tags, categories, and featured image if you design has it. If you're feeling frisky, you can try messing around with [Advance Custom Fields](https://www.advancedcustomfields.com/) and adding custom fields that your design needs. 
 
-### Post Listing Template
-You should have coded a Post Listing template for your midterm. Convert this into a [WordPress Template](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/templates/template-post-listing.php). The content for this page should be coming from the CMS.
+This page should include the following components styles:
+- Headings 1 - 6
+- Unordered list
+- Ordered List
+- Paragraphs
+- Pull Quotes
+- Links
+- Images with caption
 
-### Sidebar
-You should have coded a Sidebar template for your midterm. 
-- [Register your sidebar](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/functions.php#L59)
-- Add widgets to your sidebar (From your WP Dashboard)
-- Create a [sidebar.php](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/sidebar.php) inside the root of your WP Theme
-- Include that sidebar into yout [sidebar template](https://github.com/mrpaulphan/idm250/blob/master/wordpress/wp-content/themes/class_demo/templates/template-sidebar.php)
+#### If You have a Custom Post Type such as "Projects"
+Using [single-{post-type-name}.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/single-projects.php) as an example, add this to your template and create a page that will dynamically pull in the page title, and page builder. Feel free to add any other additional content such as date, tags, categories, and featured image if you design has it. If you're feeling frisky, you can try messing around with [Advance Custom Fields](https://www.advancedcustomfields.com/) and adding custom fields that your design needs. 
 
-### Creating a tag
-Make sure your code has been pushed to your repo and up to date.
-Here's a [link](https://git-scm.com/book/en/v2/Git-Basics-Tagging) on how to create a git tag. Using your terminal/command line, get inside the folder where your project files are kept: cd `/path/to/my/codebase`. You want to 
-1. Create a tag `git tag -l "v0.7.0"`
-2. Annotate the tag `git tag -a v0.7.0 -m "v0.7.0"`
-3. push the tag `git push origin v0.7.0`
+This page should include the following components styles:
+- Headings 1 - 6
+- Unordered list
+- Ordered List
+- Tables
+- Buttons
+- Paragraphs
+- Pull Quotes
+- Links
+- Images with caption 
 
-### Creating a release
-Use this article [here](https://help.github.com/articles/creating-releases/me) to create a github release. 
+You can register your custom post type [here](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/functions.php#L22)
 
-Release Info
-- Tag Version = “v0.7.0”
-- Title = “v0.7.0”
 
 ### Deployment
-Once complete, copy your theme over to your remote server into the same exact spot. Assuming that `public_html` is the root of your server, the theme should be copied into `public_html/idm250/wp-content/themes/`. Login to your WordPress site and recreate the widget and pages. 
+Once complete, copy your theme over to your remote server into the same exact spot. Assuming that `public_html` is the root of your server, the theme should be copied into `public_html/idm250/wp-content/themes/`. Login to your WordPress site and copy your local menu and pages.
+
+#### Avoiding  DB conflicts
+To avoid conflicts when exporting and importing your DB, add these lines of code to your `wp-config.php` file right under `define( 'WP_DEBUG', false );` on **both** your **local** and **production** environment
+
+```
+define( 'WP_HOME', 'http://example.com' );
+define( 'WP_SITEURL', 'http://example.com' );
+```
+
+Replace `http://example.com` with your domain
+
 
 ## Submission
-- Link to your `v0.7.0` release
-- Link to the 404, sidebar, post listing templates
+- Link to an example single.php page on learn
+- Link to your repo with the code
 
 ### Example Submission Format
 ```
-Github Release: https://github.com/mrpaulphan/idm250/releases/tag/v0.7.0
-
-404 Template: {protocol}://{your-domain}/idm250/{this-template-url}
-Post Listing Template: {protocol}://{your-domain}/idm250/{this-template-url}
-Sidebar Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Homepage: https://{your-domain}/idm250/{single-uri} (Root of your website)
+Github: https://github.com/{username}
 ```
-
 
