@@ -25,24 +25,24 @@ function register_project_custom_post_type() {
       'revisions',
       'page-attributes',
       'post-formats'
-  ],
-  'taxonomies'            => [],
-  'hierarchical'          => false,
-  'public'                => true,
-  'show_ui'               => true,
-  'show_in_menu'          => true,
-  'menu_position'         => 5,
-  'show_in_admin_bar'     => true,
-  'show_in_nav_menus'     => true,
-  'can_export'            => true,
-  'has_archive'           => false,
-  'exclude_from_search'   => false,
-  'publicly_queryable'    => true,
-  'show_in_rest'          => true,
-  // Dash Icons https://developer.wordpress.org/resource/dashicons/#media-audio
-  'menu_icon'             => 'dashicons-clipboard'
-  // 'menu_icon'             => get_stylesheet_directory_uri() . '/static/images/icons/industries.png'
-  ];
+    ],
+    'taxonomies'            => ['category', 'post_tag'],
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 5,
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => false,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'show_in_rest'          => true,
+    // Dash Icons https://developer.wordpress.org/resource/dashicons/#media-audio
+    'menu_icon'             => 'dashicons-clipboard'
+    // 'menu_icon'             => get_stylesheet_directory_uri() . '/static/images/icons/industries.png'
+    ];
 
     register_post_type('projects', $args);
 }

@@ -162,3 +162,60 @@ table {
 .social-menu .menu {
 	justify-content: flex-end;
 }
+
+/* HOME PAGE */
+.hero {
+	padding: 100px 0;
+	/* background-image: url('../images/hero-home.jpg'); */
+	background-size: cover;
+	background-position: center;
+}
+.hero__content {
+	max-width: 50%;
+	margin: 0;
+	width: 100%;
+}
+.hero__heading {
+	font-size: 36px;
+	font-weight: bold;
+}
+.hero__body {
+	margin-top: 10px;
+}
+.hero__cta {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	padding: 10px 40px;
+	text-align: center;
+	background-color: blueviolet;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+/* Media Block */
+.media-block {
+	display: flex;
+	margin-top: 50px;
+}
+.media-block__figure {
+	width: 50%;
+	padding-right: 100px;
+}
+.media-block__image {
+	width: 100%;
+}
+
+.media-block__content {
+	width: 50%;
+}
+
+.media-block__heading {
+	font-size: 22px;
+}

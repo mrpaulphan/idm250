@@ -5,6 +5,7 @@
  */
 ?>
 <?php get_header();?>
+<?php get_template_part('components/hero'); ?>
 <main class="main-content">
   <?php while (have_posts()) : the_post(); ?>
     <div class="container split-sidebar">
