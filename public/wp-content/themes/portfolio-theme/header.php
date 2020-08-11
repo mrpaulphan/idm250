@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header</title>
-  <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-<header class="header">
-  <div class="container header__content">
-    <img class="header__logo" src="https://placehold.it/500x60" alt="This is the logo">
+  <title>IDM 250</title>
 
-    <?php wp_nav_menu(['theme_location' => 'primary_menu']);?>
-  </div>
-</header>
+  <?php
+  // Link - https://developer.wordpress.org/reference/functions/wp_head/
+  // Plugins and WordPress core use this function to insert crucial elements into your document (e.g., scripts, styles, and meta tags).
+  // Always put wp_head() just before the closing tag of your theme
+  wp_head();
+  ?>
+</head>
+
+<body <?php body_class(); ?>>
+  <header class="header">
+    <div class="container header__content">
+      <a href="/">IDM250 - CMS</a>
+      <?php
+        // Registered this menu in functions.php via register_theme_sidebar()
+        wp_nav_menu(['theme_location' => 'primary_menu']);?>
+    </div>
+  </header>
+  <!-- Main Content -->

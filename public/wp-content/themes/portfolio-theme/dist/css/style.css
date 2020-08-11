@@ -80,9 +80,6 @@ table {
 	border-bottom: 1px solid red;
 }
 
-.header {
-	margin-bottom: 50px;
-}
 
 .wp-block-quote {
 	margin-left: 10px;
@@ -141,14 +138,27 @@ table {
 }
 
 .footer {
+	margin-top: 50px;
 	padding: 50px 0;
-	background-color: gray;
+	background-color: black;
 	display: flex;
+	color: white;
 	justify-content: space-between;
+}
+.footer .menu a {
+	color: #FFFFFF;
 }
 .footer-menu {
 	width: 40%;
 }
 .social-menu {
 	width: 40%;
+}
+
+.footer-menu .menu {
+	justify-content: initial;
+}
+
+.social-menu .menu {
+	justify-content: flex-end;
 }
