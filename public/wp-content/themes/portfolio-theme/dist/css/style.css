@@ -219,3 +219,7 @@ table {
 .media-block__heading {
 	font-size: 22px;
 }
+
+.block-cta {
+	background-color: red;
+}

@@ -1,51 +1,32 @@
 <?php
+
 /**
- *
- *  Register Custom Projects Post Type
+ * Register Project CPT
  *
  * @link https://developer.wordpress.org/reference/functions/register_post_type/
  * @return void
  */
-function register_projects_post_type() {
-    $singular = 'Project';
-    $plural = 'Projects';
-
-    $labels = [
-    'name'                  => $plural,
-    'singular_name'         => $singular,
-    'archives'              => '' . $singular . ' Archives',
-    'attributes'            => '' . $singular . ' Attributes',
-    'all_items'             => 'All ' . $plural . '',
-    'add_new_item'          => 'Add New ' . $plural . '',
-    'add_new'               => 'Add New',
-    'featured_image'        => 'Featured Image',
-    'set_featured_image'    => 'Set featured image',
-    'remove_featured_image' => 'Remove featured image',
-    'use_featured_image'    => 'Use as featured image',
-    'insert_into_item'      => 'Insert into ' . $singular . '',
-    'uploaded_to_this_item' => 'Uploaded to this ' . $singular . '',
-    'items_list'            => '' . $plural . ' list',
-    'items_list_navigation' => '' . $plural . ' list navigation',
-    'filter_items_list'     => 'Filter ' . $singular . ' list',
-    ];
-
+function register_project_custom_post_type() {
     $args = [
-    'label'                 => $plural,
-    'labels'                => $labels,
-    'supports'              => [
-        'title',
-        'editor',
-        'author',
-        'thumbnail',
-        'excerpt',
-        'trackbacks',
-        'custom-fields',
-        'comments',
-        'revisions',
-        'page-attributes',
-        'post-formats'
+    'label'                 => 'Project',
+    'labels'                => [
+      'name'                  => 'Projects',
+      'singular_name'         => 'Project'
     ],
-    'taxonomies'            => [],
+    'supports' => [
+      'title',
+      'editor',
+      'author',
+      'thumbnail',
+      'excerpt',
+      'trackbacks',
+      'custom-fields',
+      'comments',
+      'revisions',
+      'page-attributes',
+      'post-formats'
+    ],
+    // 'taxonomies'            => ['category', 'post_tag'],
     'hierarchical'          => false,
     'public'                => true,
     'show_ui'               => true,
@@ -58,9 +39,11 @@ function register_projects_post_type() {
     'exclude_from_search'   => false,
     'publicly_queryable'    => true,
     'show_in_rest'          => true,
+    // Dash Icons https://developer.wordpress.org/resource/dashicons/#media-audio
+    'menu_icon'             => 'dashicons-clipboard'
     // 'menu_icon'             => get_stylesheet_directory_uri() . '/static/images/icons/industries.png'
-];
+    ];
+
     register_post_type('projects', $args);
 }
-
-add_action('init', 'register_projects_post_type', 0);
+add_action('init', 'register_project_custom_post_type');

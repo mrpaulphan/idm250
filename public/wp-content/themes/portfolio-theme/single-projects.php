@@ -24,9 +24,19 @@
 
           <p>Year: <?php the_date('Y') ?></p>
 
-          <?php if (get_field('technology')): ?>
-            <p>Tech Stack: <?php the_field('technology') ?></p>
-          <?php endif; ?>
+          <?php
+            $arg = [
+              'taxonomy'   => 'technologies',
+              'hide_empty' => true,
+            ];
+            $taxonomies = get_terms($arg);
+          ?>
+          <p>Tech Stack:
+              <?php foreach ($taxonomies as $category): ?>
+                <span><?php echo $category->name; ?></span>
+              <?php endforeach; ?>
+          </p>
+
 
           <?php
             $link = get_field('project_link');

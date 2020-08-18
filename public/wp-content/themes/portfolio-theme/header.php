@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
-  
+
   <?php
   // Link - https://developer.wordpress.org/reference/functions/wp_head/
   // Plugins and WordPress core use this function to insert crucial elements into your document (e.g., scripts, styles, and meta tags).
