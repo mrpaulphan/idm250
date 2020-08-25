@@ -16,14 +16,14 @@ Complete website with responsive design, all functionality, animation...etc
     - Padding and Space is consistent
     - There is a clear visual hierarchy
 - Using WP Hooks/Functions
-  - Included `wp_head()` in your header.php file
+    - Included `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L19) file
     - Included `wp_footer()` in your footer.php file
     - Included `body_class()` to the body element
+    - Dynamic Navigation using `wp_nav_menu()`
     - Include favicon
     - Added dynamic title tags
     - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()`
 - Theme Requirements
-    - Dynamic Navigation using `wp_nav_menu()`
         - Required Templates
             - Home (front-page.php)
               - Unique template for the homepage
