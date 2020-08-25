@@ -25,18 +25,16 @@
           <p>Year: <?php the_date('Y') ?></p>
 
           <?php
-            $arg = [
-              'taxonomy'   => 'technologies',
-              'hide_empty' => true,
-            ];
-            $taxonomies = get_terms($arg);
+            $taxonomy_name = 'technologies';
+            $post_categories = wp_get_post_terms(get_the_ID(), $taxonomy_name);
           ?>
           <p>Tech Stack:
-              <?php foreach ($taxonomies as $category): ?>
-                <span><?php echo $category->name; ?></span>
-              <?php endforeach; ?>
+            <?php foreach ($post_categories as  $category) : // Loop through current categories and output it?>
+                <a href="<?php echo get_term_link($category->term_id); ?>"><?php echo $category->name; ?></a>
+            <?php endforeach; ?>
           </p>
 
+     
 
           <?php
             $link = get_field('project_link');
