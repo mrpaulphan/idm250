@@ -1,9 +1,16 @@
+<?php
+// This value comes from settings > general under "Site Title"
+$site_title = bloginfo('name');
+$separator = ' | ';
+$page_title = is_home() ? 'Home' : wp_title();
+$meta_title = $page_title . $separator . $site_title;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php bloginfo('name'); ?> | <?php wp_title(''); ?></title>
+  <title><?php echo $meta_title; ?></title>
 
   <?php
   // Link - https://developer.wordpress.org/reference/functions/wp_head/

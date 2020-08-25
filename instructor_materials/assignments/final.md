@@ -3,9 +3,6 @@
 ## CMS Website
 Complete website with responsive design, all functionality, animation...etc
 
-## Github Release
-Make sure your the theme has been pushed to your repository. Once you've done that, you will need to create a release for this.
-
 ## Grading checklist (40 points)
 - Responsive design
     - All pages are responsive and working at all screen sizes
@@ -18,14 +15,15 @@ Make sure your the theme has been pushed to your repository. Once you've done th
     - Content and design clearing indicate the purpose of the website and it’s goal
     - Padding and Space is consistent
     - There is a clear visual hierarchy
-    - Included `wp_head()` in your header.php file
+- Using WP Hooks/Functions
+  - Included `wp_head()` in your header.php file
     - Included `wp_footer()` in your footer.php file
     - Included `body_class()` to the body element
     - Include favicon
     - Added dynamic title tags
     - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()`
-    - Theme Requirements
-        - Dynamic Navigation using `wp_nav_menu()`
+- Theme Requirements
+    - Dynamic Navigation using `wp_nav_menu()`
         - Required Templates
             - Home (front-page.php)
               - Unique template for the homepage
