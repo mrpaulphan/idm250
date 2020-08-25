@@ -15,45 +15,73 @@ Complete website with responsive design, all functionality, animation...etc
     - Content and design clearing indicate the purpose of the website and it’s goal
     - Padding and Space is consistent
     - There is a clear visual hierarchy
-- Using WP Hooks/Functions
-    - Included `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L19) file
-    - Included `wp_footer()` in your footer.php file
-    - Included `body_class()` to the body element
-    - Dynamic Navigation using `wp_nav_menu()`
-    - Include favicon
-    - Added dynamic title tags
-    - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()`
-- Theme Requirements
-        - Required Templates
-            - Home (front-page.php)
-              - Unique template for the homepage
-              - This should be set properly by going to settings > reading > Static Homepage
-            - General (page.php)
-              - Default template when you create any new page
-            - Post Listing (archive.php / Custom Theme)
-              - Template that pulls in all of your post onto one page. The archive page can use the same template but should work when clicking on a category
-            - Post Detail (single.php)
-            - Search Results (search.php)
-            - 404 Page (404.php)
-            - Custom Template
-              - One unique page
-        - All other pages (about, contact, etc...) that exist on your site must be created and the data must be driven through WordPress. 
+- Using WP Hooks/Functions requirements
+    - Include `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L19) file
+    - Include `wp_footer()` in your [footer.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/footer.php#L26) file
+    - Include `body_class()` to the `<body>` element in your [header](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L23)
+    - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L29)
+    - Include a custom theme screenshot for your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/screenshot.jpg). Here is an [article](https://wpism.com/wordpress-theme-screenshot/#:~:text=According%20to%20the%20WordPress%20Codex,of%20880%20x%20660%20pixels.) with the dimensions. 
+    - Include favicon into your `<head>`
+    - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L13) tags
+    - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/lib/setup.php)
+- Template Requirements
+  - Home
+    - Create a unique template for the homepage
+    - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/front-page.php)
+  - General/Default
+    - Create a default template for pages in your theme
+    - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/page.php)
+  - Post Listing
+    - Create a template that pulls in all of your post onto one page.
+    - The archive page can use the same template but should work when clicking on a category
+    - [Archive Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/archive.php)
+    - [Post Listing Template Example]()
+  - Post Detail
+    - Create a detail page for any post type single. This can be the default blog or you can create a custom page for your custom post type
+    - [Example of default post detail](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/single.php)
+    - [Example of a custom post type detail page](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/single-projects.php)
+    - [How to create a custom post type single page](https://developer.wordpress.org/themes/template-files-section/custom-post-type-template-files/)
+  - Search Results
+    - Create a search listing page like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/search.php)
+  - 404 Page (404.php)
+    - Create a custom 404 page like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/404.php)
+  - Custom Template
+    - Create one custom template that's diffrent from your default `page.php`
+      - You can reference [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/templates/about.php)
 - Code Quality
     Site is smartly coded using modules for repeating code segments
     Content is **NOT STATIC** and can be updated through the WordPress dashboard
     Code is clean. White spaces, comments, and proper indentation is used in the files.
 
 
-### Example Submission Format
+
+### Submission Example
 ```
+Website: {protocol}://{your-domain}
+Github: {direct-link-to-the-repo}
+Description: {short description about what your site is}
+
 
 Templates
 --
 404 Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Github: {direct-link-to-the-file}
+
 Home Template: {protocol}://{your-domain}/idm250/{this-template-url}
-Sidebar Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Github: {direct-link-to-the-file}
+
 Post Listing Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Github: {direct-link-to-the-file}
+
 Post Detail Template: {protocol}://{your-domain}/idm250/{this-template-url}
-General Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Github: {direct-link-to-the-file}
+
+General/Default Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Github: {direct-link-to-the-file}
+
 Search Template: {protocol}://{your-domain}/idm250/{this-uri-with-the-search-query} (?q={searched word})
+Github: {direct-link-to-the-file}
+
+Custom Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Github: {direct-link-to-the-file}
 ```

@@ -2,7 +2,7 @@
 // This value comes from settings > general under "Site Title"
 $site_title = bloginfo('name');
 $separator = ' | ';
-$page_title = is_home() ? 'Home' : wp_title();
+$page_title = is_home() ? 'Home' : wp_title('');
 $meta_title = $page_title . $separator . $site_title;
 ?>
 <!DOCTYPE html>
