@@ -1,17 +1,10 @@
-<?php
-// This value comes from settings > general under "Site Title"
-$site_title = bloginfo('name');
-$separator = ' | ';
-$page_title = is_home() ? 'Home' : wp_title('');
-$meta_title = $page_title . $separator . $site_title;
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $meta_title; ?></title>
-
+  <?php // https://developer.wordpress.org/reference/functions/wp_title/?>
+  <title><?php wp_title('|', true, 'right') . bloginfo('name'); ?></title>
   <?php
   // Link - https://developer.wordpress.org/reference/functions/wp_head/
   // Plugins and WordPress core use this function to insert crucial elements into your document (e.g., scripts, styles, and meta tags).
