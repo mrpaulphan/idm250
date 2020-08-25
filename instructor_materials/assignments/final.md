@@ -8,7 +8,7 @@ Complete website with responsive design, all functionality, animation...etc
     - All pages are responsive and working at all screen sizes
 - Functionality
     - All functionality (drop downs, menus, videos, lightboxes, carousels, etc…) are working
-- Design & Content
+- Design & Content 
     - Images are final and high quality
     - All content is **real** and final
     - All content is properly labels, makes sense, and purposeful
@@ -24,7 +24,7 @@ Complete website with responsive design, all functionality, animation...etc
     - Include favicon into your `<head>`
     - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L13) tags
     - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/lib/setup.php)
-- Template Requirements
+- Template Requirements (30/40 points)
   - Home
     - Create a unique template for the homepage
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/front-page.php)
