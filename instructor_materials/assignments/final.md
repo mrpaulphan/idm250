@@ -61,7 +61,11 @@ Complete website with responsive design, all functionality, animation...etc
     - Create a custom 404 page like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/404.php)
   - Custom Template
     - Create one custom template that's different from your default `page.php`
-      - You can reference [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/templates/about.php)
+    - This can be a template for a custom design you have for a specific page
+    - This can be an alternative to the general default page
+      - Maybe the same as the default but with a sidebar
+      - Maybe a page that's full width vs having a container
+    - You can reference [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/templates/about.php)
 - Code Quality
     Site is smartly coded using modules for repeating code segments
     Content is **NOT STATIC** and can be updated through the WordPress dashboard
