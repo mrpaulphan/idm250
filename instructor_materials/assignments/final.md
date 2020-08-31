@@ -41,6 +41,9 @@ Complete website with responsive design, all functionality, animation...etc
         - Links
         - Images with caption
         - Video Embed
+    - This page is usually your base default page when creating new pages on your site.
+    - [Visual Example](http://f.happycog.com/tLufRt/eCUQo8aBkU)
+    - [Visual Example 2](http://f.happycog.com/FtBQBd/St9b84qMQh)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/page.php)
   - Post Listing
     - Create a template that pulls in all of your post onto one page.

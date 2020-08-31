@@ -34,7 +34,6 @@
             <?php endforeach; ?>
           </p>
 
-     
 
           <?php
             $link = get_field('project_link');
