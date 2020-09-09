@@ -3,7 +3,7 @@ get_header();?>
 <main class="main-content">
   <!-- Search -->
   <section>
-    <form action="/" method="get">
+    <form action="<?php echo get_site_url(); ?>" method="get">
       <label for="searchField">Search</label>
       <input type="text" name="s" id="searchField" value="<?php the_search_query(); ?>">
       <select name="post_type" id="">
