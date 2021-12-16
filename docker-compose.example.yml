@@ -1,0 +1,60 @@
+version: "3.7"
+services:
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: idm250_mailhog
+    ports:
+      - "8081:8025"
+  mariadb:
+    image: mariadb
+    container_name: idm250_mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: ${DATABASE_NAME:-local_idm250}
+      MYSQL_USER: ${DATABASE_USER:-idm250}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD:-password}
+    ports:
+      - "${DATABASE_PORT:-0250}:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+  web:
+    build: ./
+    restart: always
+    depends_on:
+      - mariadb
+    ports:
+      - "${PORT:-250}:80"
+    environment:
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      WORDPRESS_DB_HOST: ${DATABASE_HOST}
+      WORDPRESS_DB_USER: ${DATABASE_USER}
+      WORDPRESS_DB_PASSWORD: ${DATABASE_PASSWORD}
+      WORDPRESS_DB_NAME: ${DATABASE_NAME}
+      WORDPRESS_DEBUG: ${DEBUG}
+      WORDPRESS_CONFIG_EXTRA: require_once( __DIR__ . '/wp-content/config/project.php' );
+    volumes:
+      - ./php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
+      - ./public/wp-config.php:/var/www/html/wp-config-sample.php:rwf
+      - ./public/wp-content/uploads:/var/www/html/wp-content/uploads:rw
+      - ./public/wp-content/themes:/var/www/html/wp-content/themes:rw
+      - ./public/wp-content/plugins:/var/www/html/wp-content/plugins:rw
+  cli:
+    image: wordpress:cli
+    environment:
+      WORDPRESS_DB_HOST: ${DATABASE_HOST}
+      WORDPRESS_DB_USER: ${DATABASE_USER}
+      WORDPRESS_DB_PASSWORD: ${DATABASE_PASSWORD}
+      WORDPRESS_DB_NAME: ${DATABASE_NAME}
+    depends_on:
+      - web
+    volumes:
+      - db_data:/var/www/html
+
+  # node:
+  #   image: node:14
+  #   working_dir: /home/node/app
+  #   volumes:
+  #     - "./public/themes/${PROJECT_SLUG}:/home/node/app:rw"
+volumes:
+  db_data: {}

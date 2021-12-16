@@ -1,0 +1,225 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 3%;
+}
+
+.header {
+	padding: 20px 0;
+	border-bottom: 1px solid black;
+}
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+	max-width: 200px;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu-item {
+	display: block;
+	padding: 0 10px;
+}
+.menu-item a {
+	color: black;
+	text-decoration: none;
+}
+.menu-item:hover {
+	border-bottom: 1px solid red;
+}
+.menu-item:hover .sub-menu {
+	display: block;
+}
+.sub-menu {
+	display: none;
+}
+
+.current-menu-item {
+	border-bottom: 1px solid red;
+}
+
+
+.wp-block-quote {
+	margin-left: 10px;
+	border-left: 1px solid red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 22px;
+	padding-left: 20px;
+}
+.post_title {
+	font-size: 28px;
+}
+.page-builder {
+	margin-top: 50px;
+}
+.page-builder * + * {
+	margin-top: 10px;
+}
+.page-builder h2 {
+	font-size: 40px;
+}
+.page-builder {
+	font-size: 16px;
+}
+
+/* LAYOUTS */
+.split-sidebar {
+	display: flex;
+}
+.split-sidebar .column-main {
+	width: 70%;
+}
+.split-sidebar .column-sidebar {
+	width: 30%;
+}
+
+.split-3 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.split-3 .column {
+	width: 30%;
+	padding: 0 10px;
+}
+
+.wp-post-image {
+	width: 100%;
+	height: auto;
+}
+
+
+.widgettitle {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer {
+	margin-top: 50px;
+	padding: 50px 0;
+	background-color: black;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+}
+.footer .menu a {
+	color: #FFFFFF;
+}
+.footer-menu {
+	width: 40%;
+}
+.social-menu {
+	width: 40%;
+}
+
+.footer-menu .menu {
+	justify-content: initial;
+}
+
+.social-menu .menu {
+	justify-content: flex-end;
+}
+
+/* HOME PAGE */
+.hero {
+	padding: 100px 0;
+	/* background-image: url('../images/hero-home.jpg'); */
+	background-size: cover;
+	background-position: center;
+}
+.hero__content {
+	max-width: 50%;
+	margin: 0;
+	width: 100%;
+}
+.hero__heading {
+	font-size: 36px;
+	font-weight: bold;
+}
+.hero__body {
+	margin-top: 10px;
+}
+.hero__cta {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	padding: 10px 40px;
+	text-align: center;
+	background-color: blueviolet;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+/* Media Block */
+.media-block {
+	display: flex;
+	margin-top: 50px;
+}
+.media-block__figure {
+	width: 50%;
+	padding-right: 100px;
+}
+.media-block__image {
+	width: 100%;
+}
+
+.media-block__content {
+	width: 50%;
+}
+
+.media-block__heading {
+	font-size: 22px;
+}
+
+.block-cta {
+	background-color: red;
+}
