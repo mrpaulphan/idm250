@@ -6,6 +6,7 @@
  *
  *    @TODO Merge this file into wp-config.php during build process for non-docker setups
  */
+die('lkj');
 // Enqueue local.php if available.
 if (file_exists(__DIR__ . '../wp-config-local.php')) {
     require_once __DIR__ . '../wp-config-local.php';

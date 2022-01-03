@@ -1,4 +1,4 @@
-## Server Website Setup
+## Production WordPress Installation
 
 ## Overview
 Setup WordPress site on your server and have a live theme activated. Visiting your domain should lead me to a blank that says "IDM250" on it.
@@ -7,7 +7,7 @@ Setting up WP on your server
 - Create a folder called idm250 on your server
 	Example: `{domain}/idm250`
 - Create a Database
-  - Blueshost.com -> Advanced tab ->   MySQL Databases 
+  - Bluehost.com -> Advanced tab ->   MySQL Databases 
   -  Create new database and name it whatever you want. Mine is called "idm250_wp"
   -  Go back to Blueshost.com -> Advanced tab ->   MySQL Databases 
   -  Go down to users

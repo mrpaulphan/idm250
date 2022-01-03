@@ -20,7 +20,7 @@ wordpress/wp-content/wp-cache-config.php
 wordpress/wp-content/plugins/hello.php
 wordpress/wp-content/themes/demo
 wordpress/wp-content/themes/reference
-
+.vscode
 docker-compose.yml
 .env
 public/uploads/
@@ -28,3 +28,4 @@ public/plugins/
 public/wp-content/themes/twentynineteen
 public/wp-content/themes/twentytwenty
 public/wp-content/themes/twentytwentyone
+data
