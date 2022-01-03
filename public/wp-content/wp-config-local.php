@@ -1,5 +1,4 @@
 <?php
-
 /***********************************************************************
  * Include any custom local environment configurations here
  */

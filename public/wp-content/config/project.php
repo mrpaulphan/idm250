@@ -1,5 +1,4 @@
 <?php
-
 /***********************************************************************
  * Project-wide specific Configurations for wp-config.php
  *
