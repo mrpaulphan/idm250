@@ -1,24 +1,58 @@
-instructor_materials/resources/
+# Repo Specific 
+.vscode
+docker-compose.yml
+.env
+/data/
 
-# instructor_materials/assignments/02_assignment.md
-# instructor_materials/assignments/03_assignment.md
-# instructor_materials/assignments/04_assignment.md
-# instructor_materials/assignments/05_assignment.md
-# instructor_materials/assignments/final.md
-# instructor_materials/assignments/midterm.md
 
-wordpress/wp-config.php
-wordpress/wp-content/advanced-cache.php
-wordpress/wp-content/backup-db/
-wordpress/wp-content/backups/
-wordpress/wp-content/blogs.dir/
-wordpress/wp-content/cache/
-wordpress/wp-content/upgrade/
-wordpress/wp-content/uploads/
-wordpress/wp-content/mu-plugins/
-wordpress/wp-content/wp-cache-config.php
-wordpress/wp-content/plugins/hello.php
-wordpress/wp-content/themes/demo
-wordpress/wp-content/themes/reference
 
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+
+public/wp-admin/
+public/wp-content/index.php
+public/wp-content/languages
+public/wp-content/plugins/index.php
+public/wp-content/themes/index.php
+public/wp-includes/
+public/wp-config.php
+public/wp-content/advanced-cache.php
+public/wp-content/backup-db/
+public/wp-content/backups/
+public/wp-content/blogs.dir/
+public/wp-content/cache/
+public/wp-content/upgrade/
+public/wp-content/uploads/
+public/wp-content/mu-plugins/
+public/wp-content/wp-cache-config.php
+public/wp-content/plugins/hello.php
+public/wp-content/themes/demo
+public/wp-content/themes/reference
+public/wp-*.php
+public/xmlrpc.php
+public/.htaccess
+public/index.php
+public/license.txt
+public/readme.html
+public/wp-content/uploads/
+public/wp-content/plugins/
+public/wp-content/themes/twenty*/
+
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
 

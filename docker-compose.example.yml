@@ -1,0 +1,58 @@
+version: "3.7"
+services:
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: mailhog
+    ports:
+      - "8081:8025" # web ui
+      - "1212:1025" # smtp server
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./data/mysql:/var/lib/mysql:delegated
+    ports:
+      - "8082:3306"
+    restart: always
+    command: mysqld --innodb_strict_mode=OFF
+  web:
+    build: ./
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "${PORT:-250}:80"
+    links:
+      - "mysql"
+      - "mailhog"
+    environment:
+      WORDPRESS_DB_HOST: ${DATABASE_HOST}
+      WORDPRESS_DB_USER: ${DATABASE_USER}
+      WORDPRESS_DB_PASSWORD: ${DATABASE_PASSWORD}
+      WORDPRESS_DB_NAME: ${DATABASE_NAME}
+      WORDPRESS_DEBUG: ${DEBUG}
+      # WORDPRESS_CONFIG_EXTRA: require_once( __DIR__ . '/wp-content/wp-config-sample.php' );
+    volumes:
+      # - ${PWD}/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
+      - ./public/:/var/www/html/
+  cli:
+    image: wordpress:cli
+    environment:
+      WORDPRESS_DB_HOST: ${DATABASE_HOST}
+      WORDPRESS_DB_USER: ${DATABASE_USER}
+      WORDPRESS_DB_PASSWORD: ${DATABASE_PASSWORD}
+      WORDPRESS_DB_NAME: ${DATABASE_NAME}
+    depends_on:
+      - web
+    volumes:
+      - db_data:/var/www/html
+
+  # node:
+  #   image: node:14
+  #   working_dir: /home/node/app
+  #   volumes:
+  #     - "./public/themes/${PROJECT_SLUG}:/home/node/app:rw"
+volumes:
+  db_data: {}
