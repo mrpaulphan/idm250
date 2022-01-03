@@ -9,8 +9,7 @@
 FROM wordpress
 
 # Copy existing application directory contents
-COPY ./public/wp-content/themes /var/www/html/wp-content/themes
-# COPY ./public/wp-content/config /var/www/html/wp-content/config
+COPY ./config/wp-content/themes /var/www/html/wp-content/themes
 
 # Install Composer
 RUN set -ex && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer

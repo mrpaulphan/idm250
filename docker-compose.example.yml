@@ -6,11 +6,6 @@ services:
     ports:
       - "8081:8025" # web ui
       - "1212:1025" # smtp server
-  # MySQL 5.7
-  # Point web servers to mysql for MySQL 5.7 server
-  # Username: root
-  # Password: root
-  # Local Port for Sequel Ace: 3306
   mysql:
     image: mysql:5.7
     container_name: mysql
@@ -38,14 +33,10 @@ services:
       WORDPRESS_DB_PASSWORD: ${DATABASE_PASSWORD}
       WORDPRESS_DB_NAME: ${DATABASE_NAME}
       WORDPRESS_DEBUG: ${DEBUG}
-      WORDPRESS_CONFIG_EXTRA: require_once( __DIR__ . '/wp-content/config/project.php' );
+      # WORDPRESS_CONFIG_EXTRA: require_once( __DIR__ . '/wp-content/wp-config-sample.php' );
     volumes:
       # - ${PWD}/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
-      - ./public/wp-content/config:/var/www/html/wp-content/config:rw
-      - ./public/:/var/www/html/wp-config-sample.php:rw
-      - ./public/wp-content/uploads:/var/www/html/wp-content/uploads:rw
-      - ./public/wp-content/plugins:/var/www/html/wp-content/plugins:rw
-      - ./public/wp-content/themes:/var/www/html/wp-content/themes:rw
+      - ./public/:/var/www/html/
   cli:
     image: wordpress:cli
     environment:
