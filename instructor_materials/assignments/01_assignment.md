@@ -38,4 +38,11 @@ update the values in `DB_NAME`, `DB_USER`, `DB_PASSWORD`
   - Go to Appearance > themes and activate your theme that you uploaded
 
 ## How to Submit
-Submit a link to your new WordPress site under Assignment 1 on blackboard. When you visit the link, I should see a blank screen with just the text idm250 on it. I should also be able to go to your {domain}/idm250/wp-admin and see a WP login screen. 
+Submit a link to your new WordPress site under Assignment 1 on blackboard. When you visit the link, I should see a blank screen with just the text "idm250" on it. 
+
+I should also be able to go to your {domain}/idm250/wp-admin and see a WP login screen. 
+
+Example Submission 
+```
+Homepage: https://mrpaulphan.com/idm250
+Login Page: https://mrpaulphan.com/idm250/wp-admin
