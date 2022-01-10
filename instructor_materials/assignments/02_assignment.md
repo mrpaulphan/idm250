@@ -8,8 +8,9 @@ If you’re using an existing website you’ve created, polish up your design an
 ### Templates
 Create/Design the following templates:
 - Home (front-page.php)
-    - Design a comp at 1280px, 320px  wide
-- Post Detail (single.php)
+    - Design a comp at **1280px** and **320px** wide
+- Portfolio Detail (single.php)
+    - Design a comp at **1280px** and **320px** wide
     - This page should include the following components styles:
         - Headings 1 - 6
         - Unordered list
@@ -19,44 +20,42 @@ Create/Design the following templates:
         - Paragraphs
         - Pull Quotes
         - Links
-        - Images with caption 
+        - Images with caption
         - Video
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/single.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/single-2.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/single-3.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/single-4.png)
-    - Design a comp at 1280px wide
-- Post Listing (Archive)
-  - This will list a bunch of post from your CMS. 
+    
+- Portfolio Listing (archive.php)
+  - Design a comp at **1280px** wide
+  - This will dynamically list all of your portfolio post on the page or by category
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/archive.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/listing.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/listing-2.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/assets/listing-3.png)
-    - Design a comp at 1280px wide
 - Search Results (Search)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master//instructor_materials/assets/search.png)
-        Design a comp at 1280px wide
+        Design a comp at **1280px** wide
 - 404
     - [Example](https://github.com/mrpaulphan/idm250/blob/master//instructor_materials/assets/404.png)
-    - Design a comp at 1280px wide
+    - Design a comp at **1280px** wide
 
-Please zip up all your files and follow the idm250-{section number}_{userid}_{file name}
-
-*Image extension doesn't matter
+## How to Submit
+1. Upload your assets to your new WordPress site under the media tab. Once uploaded, you should receive a live url to that post. Link me to every design you've made. You can follow this [link](https://www.wpbeginner.com/beginners-guide/how-to-get-the-url-of-images-you-upload-in-wordpress/#:~:text=Go%20to%20Media%20%C2%BB%20Library%20from,option%20on%20the%20right%20column.) if you need more help.
+2. Link your project github repo
 
 **Submission Example**
 ```
-- idm250-001_pp455_midterm.zip
--- home_1280px.jpg
--- home_320px.jpg
--- listing_1280px.jpg
--- single_1280px.jpg
--- single_320px.jpg
--- search_1280px.jpg
--- 404_1280px.jpg
+Repo: {link-to-your-project-repo}
+
+Home Large: {valid-working-url-link-to-asset}
+Home Small: {valid-working-url-link-to-asset}
+Portfolio Detail: {valid-working-url-link-to-asset}
+Portfolio Detail Small: {valid-working-url-link-to-asset}
+Portfolio Listing: {valid-working-url-link-to-asset}
+Search: {valid-working-url-link-to-asset}
+404: {valid-working-url-link-to-asset}
 ```
 
 
-## How to Submit
-Submit two links via Blackboard under one submission
-- Upload your zipped file via blackboard
