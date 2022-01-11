@@ -1,0 +1,1 @@
+This is the front-page.php file. This is only used when the homepage is set under settings > reading > static pages.

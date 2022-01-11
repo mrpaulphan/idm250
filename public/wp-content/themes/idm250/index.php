@@ -1,1 +1,1 @@
-idm250
+This index.php. All pages will fallback to this page.
