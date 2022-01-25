@@ -6,7 +6,6 @@ The goal of this assignment is to take your midterm and convert it to use PHP + 
     - [Dynamic Header](#dynamic-header)
     - [Dynamic Menu](#dynamic-menu)
     - [Dynamic Footer](#dynamic-footer)
-    - [General Styles Template](#general-styles-template)
     - [Deployment](#deployment)
   - [Submission](#submission)
     - [Example Submission Format](#example-submission-format)
