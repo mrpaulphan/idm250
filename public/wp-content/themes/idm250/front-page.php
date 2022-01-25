@@ -1,1 +1,5 @@
-This is the front-page.php file. This is only used when the homepage is set under settings > reading > static pages.
+<?php get_header(); ?>
+
+This front.php. All pages will fallback to this page.
+
+<?php get_footer();
