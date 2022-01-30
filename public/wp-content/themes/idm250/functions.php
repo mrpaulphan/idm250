@@ -40,7 +40,10 @@ function include_js_files()
 {
     wp_enqueue_script(
         'idm250-js',
-        get_template_directory_uri() . '/dist/scripts/main.js'
+        get_template_directory_uri() . '/dist/scripts/main.js',
+        [],
+        false,
+        true
     );
 }
 // When WP performs this action, call our function
