@@ -20,3 +20,11 @@
   <?php
   // Registered this menu in functions.php
   wp_nav_menu(['theme_location' => 'primary_menu']);
+
+  // $menu_items = idm_render_menu('primary_menu');
+
+  // if ($menu_items) {
+  //     foreach ($menu_items as $key => $row) {
+  //         echo "<a href='$row->url'>$row->title</a>";
+  //     }
+  // }
