@@ -1,3 +1,10 @@
-* {
-	color: red;
+.single-projects {
+	display: flex;
+}
+
+.single-projects main {
+	width: 75%;
+}
+.single-projects aside {
+	width: 25%;
 }
