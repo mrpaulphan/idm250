@@ -1,4 +1,10 @@
-<?php get_header();
+<?php
+/**
+ * If present, this will be used as your frontpage
+ * @link https://developer.wordpress.org/themes/functionality/custom-front-page-templates/#custom-site-front-page-template
+ */
+
+get_header();
 // https://developer.wordpress.org/reference/classes/wp_query/
 $arg = [
     'post_type' => 'idm-projects',
