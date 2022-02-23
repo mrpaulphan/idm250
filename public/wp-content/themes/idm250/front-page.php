@@ -1,35 +1,13 @@
-<?php get_header();
-// https://developer.wordpress.org/reference/classes/wp_query/
-$arg = [
-    'post_type' => 'idm-projects',
-    'post_status' => 'publish',
-    'posts_per_page' => 4,
-    'order' => 'DESC'
-];
-$project_query = new WP_Query($arg);
-
+<?php get_header(); ?>
+<?php
+get_template_part(
+    'components/heros/home-hero',
+    null,
+    [
+        'heading' => 'Paul Phan',
+        'body' => 'Developer'
+    ]
+);
+get_template_part('components/recent-works');
 ?>
-
-?>
-
-<section class="hero">
-  <h1>This is the home page hero</h1>
-</section>
-<section class="featured-works">
-  <h2>Featured Works</h2>
-  <div class="works">
-    <?php
-    while ($project_query->have_posts()) : $project_query->the_post(); ?>
-    <div class="works__column">
-      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-      </h2>
-      <p><?php the_excerpt(); ?>
-      </p>
-    </div>
-    <?php
-    endwhile;
-    wp_reset_postdata();
-  ?>
-  </div>
-</section>
 <?php get_footer();
