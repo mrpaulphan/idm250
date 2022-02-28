@@ -1,7 +1,4 @@
-<section class="cta container">
-  <h2 class="cta__heading"><span>Get in Touch</span></h2>
-  <a class="button--primary cta__link" href="mailto:test@test.com">Contact Me</a>
-</section>
+<?php get_template_part('components/cta'); ?>
 <footer class="footer ">
   <p class="container">&copy; <?php echo date('Y'); ?> | IDM 250
   </p>

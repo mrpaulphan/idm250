@@ -7,6 +7,7 @@ $arg = [
     'order' => 'DESC'
 ];
 $project_query = new WP_Query($arg);
+
 ?>
 
 <section class="featured-works">
@@ -14,7 +15,19 @@ $project_query = new WP_Query($arg);
   <div class="works">
     <?php
     while ($project_query->have_posts()) : $project_query->the_post(); ?>
-    <div class="works__column">
+    <?php
+    // Has to be done in the loop so we have access to the featured image ID
+    $featured_image = idm_get_asset_by_id(get_post_thumbnail_id());
+
+    if (!$featured_image) {
+        $featured_image['alt'] = 'Missing Image';
+        $featured_image['src'] = '//via.placeholder.com/600x450';
+    };
+    ?>
+    <div class="recent-work-teaser">
+      <img class="recent-work-teaser__image"
+        src="<?php echo $featured_image['src']; ?>"
+        alt="<?php echo $featured_image['alt']; ?>">
       <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </h2>
       <p><?php the_excerpt(); ?>

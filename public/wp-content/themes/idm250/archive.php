@@ -7,16 +7,19 @@
 */
 get_header(); ?>
 
-<h1><?php the_archive_title(); ?>
+<h1 class="container"><?php the_archive_title(); ?>
 </h1>
-<div class="container">
-  <div class="grid-3">
+<div class="container sidebar">
+  <div class="sidebar-main grid-2">
     <?php
     while (have_posts()) : the_post();
       get_template_part('components/project-teaser');
     endwhile;
   ?>
   </div>
+  <aside class="sidebar-aside">
+    Some Stuff Here
+  </aside>
 </div>
 
 <?php get_footer();

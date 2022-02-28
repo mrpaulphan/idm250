@@ -9,6 +9,11 @@ get_header(); ?>
     while (have_posts()) : the_post();
       get_template_part('components/project-teaser');
     endwhile;
+    the_posts_pagination([
+        'mid_size' => 2,
+        'prev_text' => __('« Previous', 'txdomain'),
+        'next_text' => __('Next »', 'txdomain')
+    ]);
   ?>
   </div>
 </div>
