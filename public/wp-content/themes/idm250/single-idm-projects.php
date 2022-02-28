@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-This is the single-idm-projects file
 <?php while (have_posts()) : the_post(); ?>
-<div class="single-projects">
+<div class="single-projects container">
   <main>
     <h1 class=""><?php the_title(); ?>
     </h1>

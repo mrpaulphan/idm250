@@ -9,5 +9,6 @@ get_template_part(
     ]
 );
 get_template_part('components/recent-works');
+get_template_part('components/recent-posts');
 ?>
 <?php get_footer();

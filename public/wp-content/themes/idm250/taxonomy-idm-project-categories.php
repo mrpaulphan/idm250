@@ -1,8 +1,9 @@
 <?php
 get_header(); ?>
 
-<h1><?php the_archive_title(); ?>
+<h1 class="container"><?php the_archive_title(); ?>
 </h1>
+<br>
 <div class="container">
   <div class="grid-4">
     <?php
