@@ -32,7 +32,7 @@ function idm_register_taxonomies()
             'show_in_rest' => true,
             'show_admin_column' => true,
             'query_var' => true,
-            'rewrite' => ['slug' => 'project-categories'],
+            'rewrite' => ['slug' => 'works'],
         ]
     );
 }

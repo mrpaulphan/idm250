@@ -18,7 +18,7 @@ get_header(); ?>
   ?>
   </div>
   <aside class="sidebar-aside">
-    Some Stuff Here
+    <?php dynamic_sidebar('sidebar-primary'); ?>
   </aside>
 </div>
 

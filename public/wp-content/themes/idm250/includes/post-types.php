@@ -39,6 +39,9 @@ function idm_register_custom_post_type()
         'exclude_from_search' => false,
         'publicly_queryable' => true,
         'show_in_rest' => true,
+        'rewrite' => [
+            'slug' => 'projects'
+        ],
         // Dash Icons https://developer.wordpress.org/resource/dashicons/#media-audio
         'menu_icon' => 'dashicons-clipboard'
         // 'menu_icon'             => get_stylesheet_directory_uri() . '/static/images/icons/industries.png'
