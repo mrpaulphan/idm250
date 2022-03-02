@@ -86,10 +86,12 @@ add_action('after_setup_theme', 'add_post_thumbnails_support');
 
 function idm_register_sidebars()
 {
-    register_sidebar([
-        'name' => 'Primary Sidebar',
-        'id' => 'sidebar-primary',
-    ]);
+    register_sidebar(
+        [
+            'name' => 'Primary Sidebar',
+            'id' => 'sidebar-primary',
+        ]
+    );
     register_sidebar([
         'name' => 'Secondary Sidebar',
         'id' => 'sidebar-secondary',

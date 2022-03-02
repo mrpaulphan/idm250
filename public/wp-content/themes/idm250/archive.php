@@ -15,6 +15,13 @@ get_header(); ?>
     while (have_posts()) : the_post();
       get_template_part('components/project-teaser');
     endwhile;
+    the_posts_pagination(
+        [
+            'mid_size' => 2,
+            'prev_text' => 'Previous',
+            'next_text' => 'Next'
+        ]
+    );
   ?>
   </div>
   <aside class="sidebar-aside">

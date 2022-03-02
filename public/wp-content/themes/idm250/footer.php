@@ -1,6 +1,7 @@
 <?php get_template_part('components/cta'); ?>
 <footer class="footer ">
-  <p class="container">&copy; <?php echo date('Y'); ?> | IDM 250
+  <p class="container">
+    <?php dynamic_sidebar('sidebar-secondary'); ?>
   </p>
 </footer>
 <?php

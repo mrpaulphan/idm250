@@ -40,7 +40,7 @@ function idm_register_custom_post_type()
         'publicly_queryable' => true,
         'show_in_rest' => true,
         'rewrite' => [
-            'slug' => 'projects'
+            'slug' => 'projects' // change slug from idm-projects to /projects
         ],
         // Dash Icons https://developer.wordpress.org/resource/dashicons/#media-audio
         'menu_icon' => 'dashicons-clipboard'

@@ -1,4 +1,5 @@
 <?php
+/* Template Name: Search Results */
  get_header(); ?>
 <?php
  $args = [
