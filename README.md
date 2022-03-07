@@ -39,3 +39,5 @@ Next, copy the wordpress folder inside and paste it into your servers root folde
 ## Deploying your theme
 
 - Once you get WP installed on your server, you should only need to transfer your theme files onto your server.
+- Copying your local to production https://www.wpbeginner.com/wp-tutorials/how-to-move-wordpress-from-local-server-to-live-site/#manual-method-local-to-live
+-
