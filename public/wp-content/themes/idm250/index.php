@@ -8,7 +8,6 @@ get_header(); ?>
 <div class="container">
   <h1 class=""><?php the_title(); ?>
   </h1>
-
   <div class="">
     <!-- start content -->
     <?php the_content(); ?>

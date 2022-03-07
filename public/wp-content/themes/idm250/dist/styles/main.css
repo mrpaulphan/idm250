@@ -8,6 +8,7 @@ a {
 
 .container {
 	max-width: 1280px;
+	width: 100%;
 	padding-left: 3%;
 	padding-right: 3%;
 	margin: 0 auto;
@@ -18,10 +19,13 @@ a {
 }
 
 .header-main {
-	display: flex;
-	justify-content: space-between;
 	border: 1px solid gray;
 	margin-bottom: 40px;
+}
+
+.header-main__inner {
+	display: flex;
+	justify-content: space-between;
 }
 .menu {
 	display: flex;
