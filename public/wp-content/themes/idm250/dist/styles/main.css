@@ -31,12 +31,13 @@ a {
 	list-style: none;
 	padding: 10px;
 }
-
 .cta {
-	text-align: center;
-	padding: 50px 0;
 	margin-top: 50px;
 	background-color: rgb(79, 70, 229);
+}
+.cta__inner {
+	text-align: center;
+	padding: 50px 0;
 }
 .cta__heading {
 	font-size: 52px;
@@ -106,6 +107,11 @@ a {
 	gap: 20px 5px;
 	grid-template-columns: 1fr 1fr;
 }
+.grid-3 {
+	display: grid;
+	gap: 50px 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-4 {
 	display: grid;
 	gap: 20px 20px;
@@ -122,4 +128,17 @@ a {
 }
 .sidebar-aside {
 	width: 30%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.project-teaser__tag {
+	color: rgb(79, 70, 229);
+}
+
+li {
+	margin: 0;
+	list-style: none;
 }

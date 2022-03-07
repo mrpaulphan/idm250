@@ -1,5 +1,6 @@
 <?php
-/* Template Name: Search Results */
+/* Template Name: Search Page */
+
  get_header(); ?>
 <?php
  $args = [
@@ -8,6 +9,7 @@
  ];
  $search_query = new WP_Query($args)
 ?>
+
 <?php
 get_template_part(
     'components/heros/home-hero',
@@ -20,11 +22,12 @@ get_template_part(
 ?>
 
 <div class="container search-results">
-  <?php
+    <?php
   if ($search_query->have_posts()) {
       while ($search_query->have_posts()) : $search_query->the_post();
       get_template_part('components/project-teaser');
       endwhile;
+      // After looping through a separate query, this function restores the $post global to the current post in the main query.
       wp_reset_postdata();
   } else {
       // no results

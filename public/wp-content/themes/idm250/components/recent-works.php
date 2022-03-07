@@ -35,7 +35,8 @@ $project_query = new WP_Query($arg);
     </div>
     <?php
     endwhile;
-    wp_reset_postdata();
+     // After looping through a separate query, this function restores the $post global to the current post in the main query.
+wp_reset_postdata();
   ?>
   </div>
 </section>
