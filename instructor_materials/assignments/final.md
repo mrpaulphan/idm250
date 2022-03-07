@@ -21,7 +21,7 @@ Complete website with responsive design, all functionality, animation...etc
   - Include `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php) file
   - Include `wp_footer()` in your [footer.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/footer.php) file
   - Include `body_class()` to the `<body>` element in your [header](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php)
-  - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L29)
+  - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public%2Fwp-content%2Fthemes%2Fidm250%2Fcomponents%2Fheader.php) **or** use this custom [function called `idm_render_menu()`](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php) to create your own custom navigation
   - Include a custom theme screenshot for your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/screenshot.jpg). Here is an [article](https://wpism.com/wordpress-theme-screenshot/#:~:text=According%20to%20the%20WordPress%20Codex,of%20880%20x%20660%20pixels.) with the dimensions.
   - Include favicon into your `<head>`
   - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L13) tags
