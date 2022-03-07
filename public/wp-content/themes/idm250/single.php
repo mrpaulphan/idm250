@@ -1,13 +1,7 @@
 <?php get_header(); ?>
 
-This single.php
-
-
 <?php while (have_posts()) : the_post(); ?>
-
-
-
-<div class="">
+<div class="container">
   <h1 class=""><?php the_title(); ?>
   </h1>
 
