@@ -4,6 +4,9 @@
 
 Complete website with responsive design, all functionality, animation...etc
 
+- **Zoom Recording** [link](https://drexel.zoom.us/rec/share/qPQkMswmgIrPTheMuV5GPoPdatqB7uCF2EP8tKrmYxHi2jPMpXFwYON2Fn_z6W63.cTYcW4tn4P-M_gVp)
+- Make sure you update your BETA assignment with your final version too.
+
 ## Grading checklist (40 points)
 
 - Responsive design
