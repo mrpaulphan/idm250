@@ -30,7 +30,7 @@ Complete website with responsive design, all functionality, animation...etc
   - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php) tags
   - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php)
 - Template Requirements (30/40 points)
-  - Home - Create a unique template for the homepage using `front_page.php` - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/front-page.php) - Make sure you set the homepage by going to settings > reading >
+  - Home - Create a unique template for the homepage using `front-page.php` - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/front-page.php) - Make sure you set the homepage by going to settings > reading >
     Your homepage displays. Set the homepage to be a page on your site.
   - General/Default
     - Create a default template for pages in your theme. You can use `page.php`
