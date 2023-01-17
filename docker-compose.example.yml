@@ -18,7 +18,8 @@ services:
     restart: always
     command: mysqld --innodb_strict_mode=OFF
   web:
-    build: ./
+    image: wordpress
+    platform: linux/amd64 # For M1 Macs
     restart: always
     depends_on:
       - mysql
@@ -36,7 +37,7 @@ services:
       # WORDPRESS_CONFIG_EXTRA: require_once( __DIR__ . '/wp-content/wp-config-sample.php' );
     volumes:
       # - ${PWD}/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
-      - ./public/:/var/www/html/
+      - ./:/var/www/html/
   cli:
     image: wordpress:cli
     environment:

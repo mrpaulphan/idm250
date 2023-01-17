@@ -2,7 +2,7 @@
 
 ## Overview
 
-- [Course Syllabus](https://github.com/mrpaulphan/idm250/blob/master/instructor_materials/syllabus.md)
+- [Course Syllabus](https://github.com/mrpaulphan/idm250/blob/master/_instructor_materials/syllabus.md)
 
 ## Initial Setup
 
