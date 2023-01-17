@@ -103,6 +103,8 @@ Thumbs.db
 
 # track these mu-plugins, plugins, and themes
 # add your own entries here
+!_instructor_materials
+!.github
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
 !wp-content/themes/example-theme/
