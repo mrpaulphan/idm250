@@ -1,41 +1,44 @@
 ## Production WordPress Installation
 
 ## Overview
-Setup WordPress site on your server and have a live theme activated. Visiting your domain should lead me to a blank that says "IDM250" on it.
+In this assignment, you will be setting up a WordPress site on your server and activating a live theme. The final outcome should be a default wordpress starter page
 
-Setting up WP on your server
-- Create a folder called idm250 on your server
-	Example: `{domain}/idm250`
-- Create a Database
-  - Bluehost.com -> Advanced tab ->   MySQL Databases 
-  -  Create new database and name it whatever you want. Mine is called "idm250_wp"
-  -  Go back to Blueshost.com -> Advanced tab ->   MySQL Databases 
-  -  Go down to users
-  -  You can either create a new user or choose an existing user 
-  -  This will be the database credentials for you wp.config file so don't forget this!  
--  Creating a new user
-	- Hit create user
-	- Go back
-   - Go to add "user to database"
-   -  Add the user you created to the new database 
-   -  Grant all privilege 
-   -  Save 
-- Check DB
-  -  Go back to Blueshost.com -> Advanced tab -> PHPmyAdmin
-  - Check to see if your new DB has exist
--  Copy your local -> Server
-   - Upload your local idm250 folder (With all the WP files) to the idm250 folder you created
-once that's finished, download the `wp-config.php` file from your server and edit that with your new DB Credentials (credentials you created above) and re-upload it
-update the values in `DB_NAME`, `DB_USER`, `DB_PASSWORD`
-- Server WP Install
-  - Go to your URL `{your-domain}/idm250`. If you put in the correct credentials, you will go through the WP installation screen. If you are getting "Error connecting to database", your credentials are wrong.
-  - Make sure you save your login info you created during the installation screen.
+### Setting up WordPress on your server
+- Create a folder called `idm250` on your server. Example: `{your-domain}/idm250`
+- Create a Database:
+  - Go to Bluehost.com -> Advanced tab -> MySQL Databases 
+  - Create a new database and name it something meaningful. Example: "idm250_wp"
+  - Go back to Bluehost.com -> Advanced tab -> MySQL Databases 
+  - Scroll down to Users
+  - Create a new user or choose an existing user 
+  - This will be the database credentials for your wp-config.php file, so make sure to remember it!  
+- Add user to database:
+  - Go to Add User to Database
+  - Add the user you created to the new database 
+  - Grant all privileges 
+  - Save 
+- Verify the Database:
+  - Go back to Bluehost.com -> Advanced tab -> PHPmyAdmin
+  - Check if your new database exists
+- Copy local files to the server:
+   - Upload the local `idm250` folder (with all the WordPress files) to the `idm250` folder you created on your server.
+   - Download the `wp-config.php` file from your server and edit it with your new database credentials (credentials you created above) and re-upload it.
+   - Update the values in `DB_NAME`, `DB_USER`, `DB_PASSWORD`
+- Server WordPress Installation:
+  - Go to your URL `{your-domain}/idm250`. If you entered the correct credentials, you will go through the WordPress installation screen. If you get an "Error connecting to database" message, your credentials are incorrect.
+  - Make sure to save the login information you created during the installation process.
 
-- Create starter theme
-  - Example of the starter theme [here](https://github.com/mrpaulphan/idm250/tree/master/public/wp-content/themes/portfolio-theme-2)
-  - Copy your local starter theme that you crated and copy it to your servers in `idm250/wp-content/themes/`
+- Create a starter theme:
+  - You can use this example of the starter theme [here](https://github.com/mrpaulphan/idm250/tree/master/public/wp-content/themes/portfolio-theme-2)
+  - Copy the local starter theme that you created and copy it to the `idm250/wp-content/themes/` directory on your server.
   - Go to `{your-domain}/wp-admin` to login
-  - Go to Appearance > themes and activate your theme that you uploaded
+  - Go to Appearance > Themes and activate your theme that you uploaded.
+
+### Brainstorm your final project
+For your final project, you will be building and designing a fully custom WordPress theme.
+Start by brainstorming ideas for your theme. Think about the audience it will serve, the features it will have, and the overall design aesthetic.
+Once you have a few ideas, research similar websites to see what's already out there and what you can learn from them.
+Write a short paragraph about your theme idea and include a few links to websites that inspire you.
 
 ## How to Submit
 Submit a link to your new WordPress site under Assignment 1 on blackboard. When you visit the link, I should see a blank screen with just the text "idm250" on it. 
@@ -46,3 +49,10 @@ Example Submission
 ```
 Homepage: https://mrpaulphan.com/idm250
 Login Page: https://mrpaulphan.com/idm250/wp-admin
+
+Theme Brainstorm
+* Write all your info here
+
+Inspiration Example #1: 
+Inspiration Example #2:
+```
