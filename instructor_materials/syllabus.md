@@ -39,11 +39,13 @@ Grading is based upon attendance, class participation, homework assignments and 
 Students who are on their laptops or cellphones during class critiques will lose points on their own assignments.
 
 ### Homework Assignments
-- 1st late = -15%
-- 2nd late = automatic zero
+- 1 day late = -10%
+- 2 days late = automatic zero
+- 2nd late in the semester = -20%
+- 3nd automatic zero
 
 ### Midterm/Final
-- 1 day late = -10%
+- 1 day late = -15%
 - 2 days late = automatic zero
 
 ## Attendance Policy
