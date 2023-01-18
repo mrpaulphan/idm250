@@ -1,4 +1,3 @@
-# IDM250: Content Management Systems
 
 ## Overview
 

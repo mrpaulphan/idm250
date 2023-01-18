@@ -16,4 +16,4 @@ jobs:
         username:  ${{ secrets.BLUEHOST_FTP_USERNAME }}
         password: ${{ secrets.BLUEHOST_FTP_PASSWORD }}
         local-dir: './' # Path to your project directory. Since this specific user only has access to idm-250, i'm setting it as ./
-        dry-run: true # Uncommenet this line to do a test trial
+        # dry-run: true # Uncommenet this line to do a test trial
