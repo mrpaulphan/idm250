@@ -28,11 +28,6 @@ In this assignment, you will be setting up a WordPress site on your server and a
   - Go to your URL `{your-domain}/idm250`. If you entered the correct credentials, you will go through the WordPress installation screen. If you get an "Error connecting to database" message, your credentials are incorrect.
   - Make sure to save the login information you created during the installation process.
 
-- Create a starter theme:
-  - You can use this example of the starter theme [here](https://github.com/mrpaulphan/idm250/tree/master/public/wp-content/themes/portfolio-theme-2)
-  - Copy the local starter theme that you created and copy it to the `idm250/wp-content/themes/` directory on your server.
-  - Go to `{your-domain}/wp-admin` to login
-  - Go to Appearance > Themes and activate your theme that you uploaded.
 
 ### Brainstorm your final project
 For your final project, you will be building and designing a fully custom WordPress theme.
