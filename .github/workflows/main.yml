@@ -12,8 +12,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ftp.alexisraya.com
-        username:  paul@alexisraya.com
+        server: ${{ secrets.BLUEHOST_FTP_SERVER }}
+        username:  ${{ secrets.BLUEHOST_FTP_USERNAME }}
         password: ${{ secrets.BLUEHOST_FTP_PASSWORD }}
         local-dir: './' # Path to your project directory. Since this specific user only has access to idm-250, i'm setting it as ./
         dry-run: true # Uncommenet this line to do a test trial
