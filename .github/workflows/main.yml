@@ -1,7 +1,7 @@
 name: Deploy Master Branch to Production 🚀
 on:
   push:
-    branches: [main]
+    branches: [master]
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,3 +17,4 @@ jobs:
         password: ${{ secrets.BLUEHOST_FTP_PASSWORD }}
         local-dir: './' # Path to your project directory. Since this specific user only has access to idm-250, i'm setting it as ./
         dry-run: true # Uncommenet this line to do a test trial
+
