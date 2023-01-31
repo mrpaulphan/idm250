@@ -9,7 +9,7 @@ If you’re using an existing website you’ve created, polish up your design an
 Create/Design the following templates:
 - Home (front-page.php)
     - Design a comp at **1280px** and **320px** wide
-- Portfolio Detail (single.php)
+- Single Page Template (single.php)
     - Design a comp at **1280px** and **320px** wide
     - This page should include the following components styles:
         - Headings 1 - 6
@@ -27,16 +27,13 @@ Create/Design the following templates:
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/_instructor_materials/assets/single-3.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/_instructor_materials/assets/single-4.png)
     
-- Portfolio Listing (archive.php)
+- Landing Page (page.php)
   - Design a comp at **1280px** wide
   - This will dynamically list all of your portfolio post on the page or by category
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/_instructor_materials/assets/archive.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/_instructor_materials/assets/listing.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/_instructor_materials/assets/listing-2.png)
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/_instructor_materials/assets/listing-3.png)
-- Search Results (Search)
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master//_instructor_materials/assets/search.png)
-        Design a comp at **1280px** wide
 - 404
     - [Example](https://github.com/mrpaulphan/idm250/blob/master//_instructor_materials/assets/404.png)
     - Design a comp at **1280px** wide
