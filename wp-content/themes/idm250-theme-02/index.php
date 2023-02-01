@@ -8,5 +8,5 @@
  * E.g., it puts together the home page when no home.php file exists.
  **/
 get_header(); ?>
-<h1>Hello</h1>
+index.php
 <?php get_footer(); ?>

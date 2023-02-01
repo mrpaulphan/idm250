@@ -6,5 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The title</title>
+  <?php // https://developer.wordpress.org/reference/functions/wp_head/;?>
+  <?php wp_head(); ?>
 </head>
+
 <body>
+  <header>
+    <h1>Logo</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
