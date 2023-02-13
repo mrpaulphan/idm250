@@ -21,9 +21,9 @@ Create/Design the following templates:
         - Headings 1 - 6
         - Unordered list
         - Ordered List
-        - Tables
         - Buttons
         - Paragraphs
+            - Think about bold, links, italic, etc.
         - Pull Quotes
         - Links
         - Images with caption
