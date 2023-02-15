@@ -8,5 +8,5 @@
  * E.g., it puts together the home page when no home.php file exists.
  **/
 get_header(); ?>
-index.php
+<?php get_template_part('components/content'); ?>
 <?php get_footer(); ?>

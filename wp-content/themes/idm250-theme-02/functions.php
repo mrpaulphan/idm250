@@ -46,3 +46,27 @@ function theme_scripts_and_styles()
     );
 }
 add_action('wp_enqueue_scripts', 'theme_scripts_and_styles');
+
+/*
+* Enable support for Post Thumbnails on posts and pages.
+* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+*/
+add_theme_support('post-thumbnails');
+
+// Add excerpt support to pages
+add_post_type_support('page', 'excerpt');
+
+/**
+ * @link https://codex.wordpress.org/Navigation_Menus
+ * @return void
+ */
+function register_theme_menus()
+{
+    register_nav_menus(
+        [
+            'primary-menu' => 'Primary Menu',
+            'footer-menu' => 'Footer Menu'
+        ]
+    );
+}
+add_action('init', 'register_theme_menus');

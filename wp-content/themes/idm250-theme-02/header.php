@@ -10,14 +10,10 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
-  <header>
-    <h1>Logo</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body <?php body_class(); ?>>
+  <?php
+  // @link https://developer.wordpress.org/reference/functions/wp_body_open/
+  // Fires the wp_body_open action.
+  wp_body_open();
+  ?>
+  <?php wp_nav_menu(['theme_location' => 'primary-menu']); ?>
