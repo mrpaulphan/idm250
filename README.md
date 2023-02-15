@@ -41,3 +41,9 @@ Next, copy the wordpress folder inside and paste it into your servers root folde
 - Once you get WP installed on your server, you should only need to transfer your theme files onto your server.
 - Copying your local to production https://www.wpbeginner.com/wp-tutorials/how-to-move-wordpress-from-local-server-to-live-site/#manual-method-local-to-live
 -
+
+## How to export your database
+https://help.dreamhost.com/hc/en-us/articles/214395738-phpMyAdmin-How-to-backup-or-export-a-database-or-table
+
+How to import your database
+https://help.one.com/hc/en-us/articles/115005588189-How-do-I-import-a-database-to-phpMyAdmin-
