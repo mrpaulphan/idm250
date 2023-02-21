@@ -47,3 +47,6 @@ https://help.dreamhost.com/hc/en-us/articles/214395738-phpMyAdmin-How-to-backup-
 
 How to import your database
 https://help.one.com/hc/en-us/articles/115005588189-How-do-I-import-a-database-to-phpMyAdmin-
+
+# Troubleshooting Tips
+- [View Docs Here](_instructor_materials/docs/troubleshooting.md)
