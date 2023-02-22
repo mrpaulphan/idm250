@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+.logo {
+  width: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
  body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -23,4 +32,12 @@
  }
  .content-blocks p {
   font-size: 18px;
+ }
+
+ .content-blocks > * + * {
+  margin-top: 10px;
+ }
+
+ .content-blocks > h2 + p {
+  margin-top: 20px;
  }

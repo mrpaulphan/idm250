@@ -8,8 +8,10 @@
 $currentPostId = get_the_id();
 $terms = get_the_terms($currentPostId, 'category');
 
-foreach ($terms as $term) {
-    echo "<p>{$term->name}</p>";
+if ($terms) {
+    foreach ($terms as $term) {
+        echo "<p>{$term->name}</p>";
+    }
 }
 ?>
 <br>

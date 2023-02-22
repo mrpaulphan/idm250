@@ -17,4 +17,5 @@ If you're debugging production, make sure you turn this off after you've found t
 - Make sure you're working in the correct environment. For example, if you're working on your local environment, make sure you're not logged into your production server and viewing that site.
 - Manually check if your new changes are on your server. You can do this by going to `Appearance > Editor` and click `Theme Functions` and check if your changes are there.
 
-
+## The response is not a valid json / Missing category panel
+- Make sure your functions.php does not contain white spaces. 

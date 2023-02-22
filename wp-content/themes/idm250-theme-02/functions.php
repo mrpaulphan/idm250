@@ -38,6 +38,13 @@ function theme_scripts_and_styles()
 
     // Load in local JS {@link https://developer.wordpress.org/reference/functions/wp_enqueue_script/}
     wp_enqueue_script(
+        'tailwind', // name of the script
+        'https://cdn.tailwindcss.com',
+        [], // dependencies
+        null, // version number
+        false // load in footer
+    );
+    wp_enqueue_script(
         'idm250-scripts', // name of the script
         get_template_directory_uri() . '/dist/scripts/main.js', // http://localhost:250/wp-content/themes/idm250-theme-02/dist/scripts/main.js
         [], // dependencies
@@ -70,3 +77,60 @@ function register_theme_menus()
     );
 }
 add_action('init', 'register_theme_menus');
+
+/**
+ * Get menu items as a flat array to use for custom markup
+ * @link https://developer.wordpress.org/reference/functions/wp_nav_menu/
+ * @param string $menu_name - Name of the registered menu id
+ * @return array $menu_items - Array of WP_Post objects.
+ */
+function get_theme_menu($menu_name)
+{
+    // Get menu items as a flat array
+    $locations = get_nav_menu_locations();
+    $menu = wp_get_nav_menu_object($locations[$menu_name]);
+    $menu_items = wp_get_nav_menu_items($menu->term_id, ['order' => 'DESC']);
+    return $menu_items;
+}
+
+/**
+ * Function to register custom post types
+ * @link https://developer.wordpress.org/reference/functions/register_post_type/
+ * @return void
+ */
+function register_custom_post_types()
+{
+    // Register Albums post type
+    register_post_type(
+        'albums',
+        [
+            'labels' => [
+                'name' => __('Albums'),
+                'singular_name' => __('Album')
+            ],
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => ['slug' => 'albums'],
+            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+            'show_in_rest' => true,
+            'menu_position' => 5,
+        ]
+    );
+    register_post_type(
+        'events',
+        [
+            'labels' => [
+                'name' => __('Events'),
+                'singular_name' => __('event')
+            ],
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => ['slug' => 'events'],
+            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+            'show_in_rest' => true,
+            'menu_position' => 5,
+        ]
+    );
+}
+
+add_action('init', 'register_custom_post_types');
