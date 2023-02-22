@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-.logo {
-  width: 50px;
-}
 
 header {
   display: flex;
@@ -20,6 +17,7 @@ header {
   margin: 0;
   padding: 0;
  }
+
 
  .content-blocks h1 {
   font-weight: bold;

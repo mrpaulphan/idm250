@@ -1,4 +1,4 @@
-<div class="content-blocks">
+<div class="content-blocks prose prose-lg prose-indigo mx-auto ">
   <?php
 if (have_posts()) {
     // Load posts loop.

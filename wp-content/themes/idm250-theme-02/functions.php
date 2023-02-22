@@ -36,10 +36,17 @@ function theme_scripts_and_styles()
         'all' // media
     );
 
-    // Load in local JS {@link https://developer.wordpress.org/reference/functions/wp_enqueue_script/}
     wp_enqueue_script(
         'tailwind', // name of the script
         'https://cdn.tailwindcss.com',
+        [], // dependencies
+        null, // version number
+        false // load in footer
+    );
+    // Enable first-party plugins, like forms and typography, using the plugins query parameter.
+    wp_enqueue_script(
+        'tailwind-plugins', // name of the script
+        'https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"',
         [], // dependencies
         null, // version number
         false // load in footer

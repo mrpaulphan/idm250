@@ -17,3 +17,4 @@
   wp_body_open();
   get_template_part('components/header')
   ?>
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
