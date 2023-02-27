@@ -96,6 +96,10 @@ function get_theme_menu($menu_name)
 {
     // Get menu items as a flat array
     $locations = get_nav_menu_locations();
+    // If menu doesn't exist, let's just return an empty array
+    if (!isset($locations[$menu_name])) {
+        return [];
+    }
     $menu = wp_get_nav_menu_object($locations[$menu_name]);
     $menu_items = wp_get_nav_menu_items($menu->term_id, ['order' => 'DESC']);
     return $menu_items;
