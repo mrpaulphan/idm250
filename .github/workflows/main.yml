@@ -1,20 +1,20 @@
-name: Deploy Master Branch to Production 🚀
-on:
-  push:
-    branches: [master]
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      with:
-        server: ${{ secrets.BLUEHOST_FTP_SERVER }}
-        username:  ${{ secrets.BLUEHOST_FTP_USERNAME }}
-        password: ${{ secrets.BLUEHOST_FTP_PASSWORD }}
-        local-dir: './' # Path to your project directory. Since this specific user only has access to idm-250, i'm setting it as ./
-        dry-run: true # Uncommenet this line to do a test trial
+# name: Deploy Master Branch to Production 🚀
+# on:
+#   push:
+#     branches: [master]
+# jobs:
+#   web-deploy:
+#     name: 🎉 Deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: 🚚 Get latest code
+#       uses: actions/checkout@v2
+#     - name: 📂 Sync files
+#       uses: SamKirkland/FTP-Deploy-Action@4.3.3
+#       with:
+#         server: ${{ secrets.BLUEHOST_FTP_SERVER }}
+#         username:  ${{ secrets.BLUEHOST_FTP_USERNAME }}
+#         password: ${{ secrets.BLUEHOST_FTP_PASSWORD }}
+#         local-dir: './' # Path to your project directory. Since this specific user only has access to idm-250, i'm setting it as ./
+#         dry-run: true # Uncommenet this line to do a test trial
 
