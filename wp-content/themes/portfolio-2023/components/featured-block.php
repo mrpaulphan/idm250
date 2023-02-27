@@ -1,4 +1,4 @@
-<!-- Start /components/featured-block -->
+<!-- Start ./components/featured-block -->
 <section aria-labelledby="social-impact-heading" class="mx-auto max-w-7xl px-4 pt-24 sm:px-6 sm:pt-32 lg:px-8">
   <div class="relative overflow-hidden rounded-lg">
     <div class="absolute inset-0">
@@ -21,4 +21,4 @@
     </div>
   </div>
 </section>
-<!-- End /components/featured-block -->
+<!-- End ./components/featured-block -->

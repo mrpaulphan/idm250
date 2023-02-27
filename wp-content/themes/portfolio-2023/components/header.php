@@ -4,7 +4,7 @@
      // 2. get_theme_menu() which is a custom function I made to get the menu items. It exist in our functions.php file. You can then loop through it and write your own markup
      $menu = get_theme_menu('primary-menu');
      ?>
-<!-- Start /components/header -->
+<!-- Start ./components/header -->
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 w-full" aria-label="Global">
     <a href="#" class="-m-1.5 p-1.5">
@@ -57,4 +57,4 @@
     </div>
   </div>
 </header>
-<!-- END /components/header -->
+<!-- END ./components/header -->

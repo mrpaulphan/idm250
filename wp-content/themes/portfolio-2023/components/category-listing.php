@@ -1,4 +1,4 @@
-<!-- Start /components/category-listing -->
+<!-- Start ./components/category-listing -->
 <section aria-labelledby="category-heading" class="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8">
   <div class="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
     <h2 id="category-heading" class="text-2xl font-bold tracking-tight text-gray-900">Shop by Category</h2>
@@ -79,4 +79,4 @@
     </a>
   </div>
 </section>
-<!-- End /components/category-listing -->
+<!-- End ./components/category-listing -->
