@@ -79,6 +79,7 @@ function register_theme_menus()
     register_nav_menus(
         [
             'primary-menu' => 'Primary Menu',
+            '404-menu' => '404 Menu',
             'footer-menu' => 'Footer Menu'
         ]
     );
@@ -109,30 +110,15 @@ function register_custom_post_types()
 {
     // Register Albums post type
     register_post_type(
-        'albums',
+        'projects',
         [
             'labels' => [
-                'name' => __('Albums'),
-                'singular_name' => __('Album')
+                'name' => __('Projects'),
+                'singular_name' => __('Project')
             ],
             'public' => true,
             'has_archive' => true,
-            'rewrite' => ['slug' => 'albums'],
-            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
-            'show_in_rest' => true,
-            'menu_position' => 5,
-        ]
-    );
-    register_post_type(
-        'events',
-        [
-            'labels' => [
-                'name' => __('Events'),
-                'singular_name' => __('event')
-            ],
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => ['slug' => 'events'],
+            'rewrite' => ['slug' => 'projects'],
             'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
             'show_in_rest' => true,
             'menu_position' => 5,
