@@ -18,4 +18,9 @@ If you're debugging production, make sure you turn this off after you've found t
 - Manually check if your new changes are on your server. You can do this by going to `Appearance > Editor` and click `Theme Functions` and check if your changes are there.
 
 ## The response is not a valid json / Missing category panel
-- Make sure your functions.php does not contain white spaces. 
+- Make sure your functions.php does not contain white spaces.
+
+## My images are not loading on production
+- Make sure you've pushed your code to github and your code is deployed to your server.
+- Check the file path of the image when inspecting the code, is it correct?
+- If you exported your database locally and imported it to production, you'll have to reupload your assets on production. Files in the media library to not get exported when you export your database. Only the file path is exported. So you need to make sure the files are on your production server. 
