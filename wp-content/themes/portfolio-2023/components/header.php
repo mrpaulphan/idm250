@@ -7,7 +7,7 @@
 <!-- Start ./components/header -->
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 w-full" aria-label="Global">
-    <a href="#" class="-m-1.5 p-1.5">
+    <a href="<?php site_url(); ?>" class="-m-1.5 p-1.5">
       <span class="sr-only">Your Company</span>
       <img class="h-8 w-auto" src="https://static.cdnlogo.com/logos/c/18/ChatGPT_800x800.png" alt="">
     </a>

@@ -1,11 +1,14 @@
-<header class="flex flex-col">
+<header class="flex flex-col mt-10">
   <div class="">
-    <h1> <?php echo get_the_title(); ?></h1>
+    <h1 class="text-2xl font-bold leading-7 sm:truncate sm:text-3xl sm:tracking-tight">
+      <?php echo get_the_title(); ?>
+    </h1>
     <div><?php echo get_the_date() ?> |
       <?php get_template_part('components/blog-categories-list'); ?>
     </div>
   </div>
-  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Hero Image">
-  <div>
+  <div class="mt-10">
+    <img src="<?php echo get_the_post_thumbnail_url(); ?>"
+      alt="Hero Image">
   </div>
 </header>

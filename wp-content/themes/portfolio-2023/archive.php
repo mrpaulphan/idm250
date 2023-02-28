@@ -18,9 +18,14 @@
 
  $wp_query = new WP_Query($arg);
  ?>
-<h1> <?php echo $title; ?> </h1>
-<p> <?php echo $description; ?> </p>
-<?php
+<div class="center">
+    <h1> <?php echo $title; ?> </h1>
+    <p> <?php echo $description; ?> </p>
+</div>
+<div class="flex flex-wrap">
+
+
+    <?php
 // loop through $wp_query and output the posts
 if ($wp_query->have_posts()) {
     while ($wp_query->have_posts()) {
@@ -29,5 +34,6 @@ if ($wp_query->have_posts()) {
     }
 }
  ?>
+</div>
 
 <?php get_footer(); ?>
