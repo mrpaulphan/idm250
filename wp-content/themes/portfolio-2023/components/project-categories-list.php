@@ -1,6 +1,6 @@
 <?php
 $currentPostId = get_the_id();
-$terms = get_the_terms($currentPostId, 'category');
+$terms = get_the_terms($currentPostId, 'project-categories');
 $total_category_count = count($terms);
 
 if ($terms) {

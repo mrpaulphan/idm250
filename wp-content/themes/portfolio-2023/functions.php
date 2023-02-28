@@ -132,7 +132,6 @@ function register_custom_taxonomies()
         'query_var' => true,
         'rewrite' => ['slug' => 'project/categories'],
         'show_in_rest' => true,
-
     ];
 
     $taxonomy_name = 'project-categories'; // name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
@@ -148,23 +147,23 @@ add_action('init', 'register_custom_taxonomies');
  */
 function register_custom_post_types()
 {
+    $arg = [
+        'labels' => [
+            'name' => 'Projects',
+            'singular_name' => 'Project',
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => ['slug' => 'projects'],
+        'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'menu_position' => 5,
+        'taxonomies' => ['project-categories'],
+        'show_in_rest' => true,
+    ];
+    $post_type_name = 'projects';
+
     // Register Albums post type
-    register_post_type(
-        'projects',
-        [
-            'labels' => [
-                'name' => 'Projects',
-                'singular_name' => 'Project',
-            ],
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => ['slug' => 'projects'],
-            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
-            'menu_position' => 5,
-            'taxonomies' => ['project-categories'],
-            'show_in_rest' => true,
-        ]
-    );
+    register_post_type($post_type_name, $arg);
 }
 
 add_action('init', 'register_custom_post_types');

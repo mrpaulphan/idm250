@@ -39,3 +39,9 @@ header {
  .content-blocks > h2 + p {
   margin-top: 20px;
  }
+
+
+.hero {
+  background-size: cover;
+  padding: 50px;
+}

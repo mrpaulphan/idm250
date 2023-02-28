@@ -1,7 +1,10 @@
 <?php
  get_header();
  $title = get_the_archive_title();
- // Get the current page number from the URL. Example ?paged=2
+ // get the archive description
+ $description = get_the_archive_description();
+
+ // get the current page number; Example www.wordperss.com/about?paged=2
  if (get_query_var('paged')) {
      $current_page_number = get_query_var('paged');
  } else {
@@ -9,20 +12,22 @@
  }
  $arg = [
      'post_type' => 'post', // the post type
-     'posts_per_page' => 10, // number of posts per page
+     'posts_per_page' => 12, // number of posts per page
      'paged' => $current_page_number //
  ];
 
  $wp_query = new WP_Query($arg);
- $description = get_the_archive_description();
- // loop through $wp_query and output the posts
- if ($wp_query->have_posts()) {
-     while ($wp_query->have_posts()) {
-         $wp_query->the_post();
-         get_template_part('components/card');
-     }
- }
  ?>
-
+<h1> <?php echo $title; ?> </h1>
+<p> <?php echo $description; ?> </p>
+<?php
+// loop through $wp_query and output the posts
+if ($wp_query->have_posts()) {
+    while ($wp_query->have_posts()) {
+        $wp_query->the_post();
+        get_template_part('components/card');
+    }
+}
+ ?>
 
 <?php get_footer(); ?>
