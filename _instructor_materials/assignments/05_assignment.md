@@ -27,9 +27,6 @@ Complete website with responsive design, all functionality, animation...etc
   - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L13) tags
   - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/lib/setup.php)
 - Template Requirements (30/40 points)
-  - Home
-    - Create a unique template for the homepage
-    - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/front-page.php)
   - General/Default
     - Create a default template for pages in your theme
     - This page should include the following components styles:
@@ -62,13 +59,16 @@ Github: {direct-link-to-the-repo}
 
 Templates
 --
-404 Template: {protocol}://{your-domain}/idm250/{this-template-url}
+404 Template: {protocol}://{your-domain}/idm250/{this-template-uri}
 Github: {direct-link-to-the-file}
+Figma Design: {direct-link-to-the-file}
 
-Home Template: {protocol}://{your-domain}/idm250/{this-template-url}
+Single Template: {url}/idm250/{this-template-uri}
 Github: {direct-link-to-the-file}
+Figma Design: {direct-link-to-the-file}
 
-General/Default Template: {protocol}://{your-domain}/idm250/{this-template-url}
+General/Default Template: {url}/idm250/{this-template-uri}
 Github: {direct-link-to-the-file}
+Figma Design: {direct-link-to-the-file}
 
 ```
