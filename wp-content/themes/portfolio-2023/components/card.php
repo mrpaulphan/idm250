@@ -5,7 +5,7 @@
       </div>";
   } ?>
   <div class="">
-    <h1> <?php echo get_the_title(); ?></h1>
-    <p><?php echo get_the_excerpt(); ?></p>
+    <h1 class="font-bold"> <?php echo get_the_title(); ?></h1>
+    <p class="mt-4"><?php echo get_the_excerpt(); ?></p>
   </div>
 </div>

@@ -43,5 +43,7 @@ header {
 
 .hero {
   background-size: cover;
+  background-position: center;
   padding: 50px;
+  min-height: 300px;
 }
