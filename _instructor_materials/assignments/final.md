@@ -4,9 +4,6 @@
 
 Complete website with responsive design, all functionality, animation...etc
 
-- **Zoom Recording** [link](https://drexel.zoom.us/rec/share/qPQkMswmgIrPTheMuV5GPoPdatqB7uCF2EP8tKrmYxHi2jPMpXFwYON2Fn_z6W63.cTYcW4tn4P-M_gVp)
-- Make sure you update your BETA assignment with your final version too.
-
 ## Grading checklist (40 points)
 
 - Responsive design
@@ -24,14 +21,17 @@ Complete website with responsive design, all functionality, animation...etc
   - Include `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php) file
   - Include `wp_footer()` in your [footer.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/footer.php) file
   - Include `body_class()` to the `<body>` element in your [header](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php)
-  - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public%2Fwp-content%2Fthemes%2Fidm250%2Fcomponents%2Fheader.php) **or** use this custom [function called `idm_render_menu()`](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php) to create your own custom navigation
+  - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public%2Fwp-content%2Fthemes%2Fidm250%2Fcomponents%2Fheader.php) **or** use this custom [function called `get_theme_menu()`](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php) to create your own custom navigation
   - Include a custom theme screenshot for your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/screenshot.jpg). Here is an [article](https://wpism.com/wordpress-theme-screenshot/#:~:text=According%20to%20the%20WordPress%20Codex,of%20880%20x%20660%20pixels.) with the dimensions.
   - Include favicon into your `<head>`
   - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php) tags
   - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php)
-- Template Requirements (30/40 points)
-  - Home - Create a unique template for the homepage using `front-page.php` - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/front-page.php) - Make sure you set the homepage by going to settings > reading >
-    Your homepage displays. Set the homepage to be a page on your site.
+- WordPress Template Requirements (30/40 points)
+  - [Front Page](https://developer.wordpress.org/themes/functionality/custom-front-page-templates/#custom-site-front-page-template)
+  - - On the site front page, WordPress will always use the front-page.php template file, if it exists. If front-page.php does not exist, WordPress will determine which template file to use, depending on the user configuration of Settings > Reading >Front page displays, as follows:
+  - Check List 
+    - [ ] Template has a unique design
+  - Example of the front page template [here](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/front-page.php)
   - General/Default
     - Create a default template for pages in your theme. You can use `page.php`
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/page.php)
@@ -49,7 +49,7 @@ Complete website with responsive design, all functionality, animation...etc
     - This page is usually your base default page when creating new pages on your site.
     - [Visual Example](http://f.happycog.com/tLufRt/eCUQo8aBkU)
     - [Visual Example 2](http://f.happycog.com/FtBQBd/St9b84qMQh)
-  - Post Listing
+  - Archive Page
     - Create a template that pulls in all of your post onto one page. You should have both an `archive.php` that will list your post by category and a page that will list them all.
     - The archive page can use the same template but should work when clicking on a category
     - [Archive Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/archive.php)
@@ -63,7 +63,9 @@ Complete website with responsive design, all functionality, animation...etc
   - Search Results
     - Create a search listing page like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/search.php)
     - Make sure you have a search form like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/components/search-form.php)
-  - 404 Page (404.php)
+  - [404 (Not Found)](https://developer.wordpress.org/themes/functionality/404-pages/#creating-the-404-php-file)
+    - A 404 page is important to add into your theme in case a user stumbles upon a page that doesn’t exist or hasn’t been created yet. It is also important that your 404 page gives your visitors a way to arrive at the right place.
+
     - Create a custom 404 page like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/404.php)
   - Custom Template
     - Create one custom template that's different from your default `page.php`
