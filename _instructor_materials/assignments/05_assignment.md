@@ -1,4 +1,4 @@
-# Complete Responsive CMS Website (Beta)
+# Complete Responsive CMS Website (Alpha)
 
 ## CMS Website
 
@@ -10,18 +10,13 @@ Complete website with responsive design, all functionality, animation...etc
   - All pages are responsive and working at all screen sizes
 - Functionality
   - All functionality (drop downs, menus, videos, lightboxes, carousels, etc…) are working
-- Design & Content
-  - Images are final and high quality
-  - All content is **real** and final
-  - All content is properly labels, makes sense, and purposeful
-  - Content and design clearing indicate the purpose of the website and it’s goal
   - Padding and Space is consistent
   - There is a clear visual hierarchy
 - Using WP Hooks/Functions requirements
   - Include `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L19) file
   - Include `wp_footer()` in your [footer.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/footer.php#L26) file
   - Include `body_class()` to the `<body>` element in your [header](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L23)
-  - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L29)
+  - Include at least one dynamic Navigation using `wp_nav_menu()` or the custom one I created in my theme.
   - Include a custom theme screenshot for your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/screenshot.jpg). Here is an [article](https://wpism.com/wordpress-theme-screenshot/#:~:text=According%20to%20the%20WordPress%20Codex,of%20880%20x%20660%20pixels.) with the dimensions.
   - Include favicon into your `<head>`
   - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/portfolio-theme/header.php#L13) tags
@@ -63,7 +58,6 @@ Templates
 Github: {direct-link-to-the-file}
 Figma Design: {direct-link-to-the-file}
 
-Single Template: {url}/idm250/{this-template-uri}
 Github: {direct-link-to-the-file}
 Figma Design: {direct-link-to-the-file}
 
