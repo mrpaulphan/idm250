@@ -1,4 +1,4 @@
-# Midterm
+# 06 - Assignment
 Convert your designs into a fully functional responsive static site. Create a WP template for every page that's required. All template pages are **required** for your final. The content can be dynamic but is not required.
 
 ## Not Required
@@ -6,9 +6,7 @@ Convert your designs into a fully functional responsive static site. Create a WP
 - Search functionality does not need to work.
 
 ## Requirements
-- Home Page
-  - Use `front-page.php`
-- Portfolio Detail
+- Single / Custom Post type
   - Use `single.php`
   - This page should include the following components styles:
     - Headings 1 - 6
@@ -21,15 +19,9 @@ Convert your designs into a fully functional responsive static site. Create a WP
     - Links
     - Images with caption
     - Video
-- Portfolio Listing
-  - Create a template called "Portfolio Listing"
-  - Assign this template to a page on WP.
-- Search Results (Search)
-  - Create a template called "Search"
-  - Assign this template to a page on WP.
-- 404 Page
-  - Use `404.php`
-  - Any link that isn't valid should pull this in automatically.
+- Archive Page
+- 
+- Secondary page template 
 ## Submission
 - Link to your project github repo
 - Link to all your templates

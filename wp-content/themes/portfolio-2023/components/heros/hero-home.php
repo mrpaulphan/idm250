@@ -7,11 +7,11 @@
           <?php echo get_the_title(); ?>
         </h1>
         <p class="mt-6 text-lg leading-8 text-gray-600">
-          <?php the_field('home_hero_description_2'); ?>
+          <?php the_field('home_hero_description'); ?>
         </p>
         <div class="mt-10 flex items-center gap-x-6">
           <?php
-          $link = get_field('home_hero_cta_link_2');
+          $link = get_field('home_hero_cta');
           if($link):
               $link_url = $link['url'];
               $link_title = $link['title'];
@@ -25,12 +25,8 @@
       </div>
     </div>
     <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
-      <?php
-    $image = get_field('home_hero_image_2');
-          if(!empty($image)): ?>
       <img class="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-        src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-      <?php endif; ?>
+        src="<?php echo get_the_post_thumbnail_url() ?>" />
     </div>
   </div>
 </div>
