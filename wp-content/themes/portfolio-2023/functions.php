@@ -168,6 +168,20 @@ function register_custom_post_types()
 
 add_action('init', 'register_custom_post_types');
 
+/**
+ * Register custom sidebars
+ * @link https://developer.wordpress.org/reference/functions/register_sidebar/
+ * @return void
+ */
+function register_theme_sidebars()
+{
+    register_sidebar([
+        'name' => 'Page Sidebar',
+        'id' => 'page-sidebar',
+    ]);
+}
+add_action('widgets_init', 'register_theme_sidebars');
+
 function remove_archive_title_prefix($title)
 {
     if (is_category()) {
