@@ -5,6 +5,7 @@
  */
 get_header();
 get_template_part('components/heros/hero-home');
-get_template_part('components/category-listing');
+get_template_part('components/recent-projects');
+get_template_part('components/recent-blogs');
 get_template_part('components/featured-block');
 get_footer();
