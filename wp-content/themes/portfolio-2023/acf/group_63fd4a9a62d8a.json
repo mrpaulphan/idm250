@@ -1,0 +1,61 @@
+{
+    "key": "group_63fd4a9a62d8a",
+    "title": "Home Hero section",
+    "fields": [
+        {
+            "key": "field_63fd4a9a6d0e6",
+            "label": "Hero Description",
+            "name": "home_hero_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add some intro text to grab the user's attention in this section. Usually 3 sentences.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_63fd4c8aa051a",
+            "label": "Hero Button",
+            "name": "home_hero_cta",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "16"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1678147728
+}

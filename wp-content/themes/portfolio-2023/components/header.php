@@ -9,7 +9,12 @@ $menu = get_theme_menu('primary-menu');
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 w-full" aria-label="Global">
     <a href="<?php echo site_url(); ?>" class="-m-1.5 p-1.5">
       <span class="sr-only">Your Company</span>
-      <img class="h-8 w-auto" src="https://static.cdnlogo.com/logos/c/18/ChatGPT_800x800.png" alt="">
+      <?php
+      $image = get_field('logo', 'option');
+      if(!empty($image)): ?>
+      <img class="h-8 w-auto" src="<?php echo esc_url($image['url']); ?>"
+        alt="<?php echo esc_attr($image['alt']); ?>" />
+      <?php endif; ?>
     </a>
     <div class="flex lg:hidden">
       <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">

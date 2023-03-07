@@ -58,9 +58,6 @@ Templates
 Github: {direct-link-to-the-file}
 Figma Design: {direct-link-to-the-file}
 
-Github: {direct-link-to-the-file}
-Figma Design: {direct-link-to-the-file}
-
 General/Default Template: {url}/idm250/{this-template-uri}
 Github: {direct-link-to-the-file}
 Figma Design: {direct-link-to-the-file}
