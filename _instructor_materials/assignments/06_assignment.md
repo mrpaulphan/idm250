@@ -6,22 +6,33 @@ Convert your designs into a fully functional responsive static site. Create a WP
 - Search functionality does not need to work.
 
 ## Requirements
-- Single / Custom Post type
-  - Use `single.php`
-  - This page should include the following components styles:
+- Single / Custom Post type Single
+  - Use `single.php` or custom post type `single-{post_type}.php`
+  - All page layouts and components HTML/CSS/PHP should be completed.
+  - This page should include the following Content on the page for me to review:
     - Headings 1 - 6
     - Unordered list
     - Ordered List
-    - Tables
     - Buttons
     - Paragraphs
     - Pull Quotes
-    - Links
+    - inline links, inline bold, and inline italics
     - Images with caption
-    - Video
-- Archive Page
-- 
-- Secondary page template 
+    - Embeded Video
+- Secondary page template
+  - Create a custom page template where a user can select on the backed under Dashboard > Pages.
+  - All page layouts and components HTML/CSS/PHP should be completed.
+  - This page should include the following Content on the page for me to review:
+    - Headings 1 - 6
+    - Unordered list
+    - Ordered List
+    - Buttons
+    - Paragraphs
+    - Pull Quotes
+    - inline links, inline bold, and inline italics
+    - Images with caption
+    - Embeded Video
+
 ## Submission
 - Link to your project github repo
 - Link to all your templates
@@ -30,9 +41,6 @@ Convert your designs into a fully functional responsive static site. Create a WP
 ```
 Github: {github-repo-url}
 
-Home: {url}
-Post Detail: {url}
-Portfolio Listing: {url}
-Search: {url}
-404: {url}
+Single Example: {url}
+Page Template Example: {url}
 ```
