@@ -199,12 +199,14 @@ function remove_archive_title_prefix($title)
 }
 add_filter('get_the_archive_title', 'remove_archive_title_prefix');
 
+/**
+ * Save ACF fields to JSON in a directory in your theme
+ * @return void
+ */
 function my_acf_json_save_point($path)
 {
-    // update path
     $acf_directory = '/acf';
     $path = get_stylesheet_directory() . $acf_directory;
-    // return
     return $path;
 }
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
