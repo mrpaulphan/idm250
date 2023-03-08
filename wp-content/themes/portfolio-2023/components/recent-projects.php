@@ -12,6 +12,7 @@ $args = [
     'orderby' => 'date',
 ];
 $project_posts_query = new WP_Query($args);
+// $query = 'SELECT * FROM wp_posts WHERE post_type = "projects" ORDER BY post_date DESC LIMIT 3';
 
 ?>
 <div class="bg-white py-24 sm:py-32" data-component="recent-projects">

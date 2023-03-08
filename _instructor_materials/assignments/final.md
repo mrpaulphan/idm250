@@ -28,9 +28,11 @@ Complete website with responsive design, all functionality, animation...etc
   - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php)
 - WordPress Template Requirements (30/40 points)
   - [Front Page](https://developer.wordpress.org/themes/functionality/custom-front-page-templates/#custom-site-front-page-template)
-  - - On the site front page, WordPress will always use the front-page.php template file, if it exists. If front-page.php does not exist, WordPress will determine which template file to use, depending on the user configuration of Settings > Reading >Front page displays, as follows:
-  - Check List 
-    - [ ] Template has a unique design
+      - On the site front page, WordPress will always use the front-page.php template file, if it exists. If front-page.php does not exist, WordPress will determine which template file to use, depending on the user configuration of Settings > Reading >Front page displays, as follows:
+      - Check List
+        - [ ] Template has a unique design
+        - [ ] There is not static text in your code
+        - [ ] You're pulling in dynamic content through wordpress or ACF.
   - Example of the front page template [here](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/front-page.php)
   - General/Default
     - Create a default template for pages in your theme. You can use `page.php`

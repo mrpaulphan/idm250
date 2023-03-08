@@ -176,8 +176,8 @@ add_action('init', 'register_custom_post_types');
 function register_theme_sidebars()
 {
     register_sidebar([
-        'name' => 'Page Sidebar',
-        'id' => 'page-sidebar',
+        'name' => 'Page Sidebar', // Visual
+        'id' => 'page-sidebar', // Unique ID
     ]);
 }
 add_action('widgets_init', 'register_theme_sidebars');
@@ -202,7 +202,8 @@ add_filter('get_the_archive_title', 'remove_archive_title_prefix');
 function my_acf_json_save_point($path)
 {
     // update path
-    $path = get_stylesheet_directory() . '/acf';
+    $acf_directory = '/acf';
+    $path = get_stylesheet_directory() . $acf_directory;
     // return
     return $path;
 }
@@ -214,7 +215,8 @@ function my_acf_json_load_point($paths)
     unset($paths[0]);
 
     // append path
-    $paths[] = get_stylesheet_directory() . '/acf';
+    $acf_directory = '/acf';
+    $paths[] = get_stylesheet_directory() . $acf_directory;
 
     // return
     return $paths;

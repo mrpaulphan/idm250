@@ -10,7 +10,7 @@
   <link rel="icon"
     href="<?php echo $image['url']?>"
     type="image/x-icon" />
-  <?php endif; ?>?>
+  <?php endif; ?>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
