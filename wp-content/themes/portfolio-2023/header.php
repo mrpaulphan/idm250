@@ -7,9 +7,7 @@
   <?php
      $image = get_field('favicon', 'option');
   if(!empty($image)): ?>
-  <link rel="icon"
-    href="<?php echo $image['url']?>"
-    type="image/x-icon" />
+  <link rel="icon" href="<?php echo $image['url']?>" type="image/x-icon" />
   <?php endif; ?>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

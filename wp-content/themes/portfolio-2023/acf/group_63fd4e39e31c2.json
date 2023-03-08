@@ -1,6 +1,6 @@
 {
     "key": "group_63fd4e39e31c2",
-    "title": "Block - CTA with Image",
+    "title": "Block - CTA w\/ Image",
     "fields": [
         {
             "key": "field_63fd4e3a55f8e",
@@ -102,5 +102,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678147689
+    "modified": 1678235316
 }

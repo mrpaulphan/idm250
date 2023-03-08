@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_63fd4a9a6d0e6",
-            "label": "Hero Description",
+            "label": "Hero Descriptions",
             "name": "home_hero_description",
             "aria-label": "",
             "type": "textarea",
@@ -57,5 +57,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678147728
+    "modified": 1678235352
 }
