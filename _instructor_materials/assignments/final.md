@@ -18,13 +18,13 @@ Complete website with responsive design, all functionality, animation...etc
   - Padding and Space is consistent
   - There is a clear visual hierarchy
 - Using WP Hooks/Functions requirements
-  - Include `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php) file
-  - Include `wp_footer()` in your [footer.php](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/footer.php) file
-  - Include `body_class()` to the `<body>` element in your [header](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php)
-  - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public%2Fwp-content%2Fthemes%2Fidm250%2Fcomponents%2Fheader.php) **or** use this custom [function called `get_theme_menu()`](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php) to create your own custom navigation
-  - Include a custom theme screenshot for your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/screenshot.jpg). Here is an [article](https://wpism.com/wordpress-theme-screenshot/#:~:text=According%20to%20the%20WordPress%20Codex,of%20880%20x%20660%20pixels.) with the dimensions.
+  - Include `wp_head()` in your [header.php](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/header.php#L25vs) file
+  - Include `wp_footer()` in your [footer.php](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/footer.php#L2) file
+  - Include `body_class()` to the `<body>` element in your [header](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/header.php#L28)
+  - Include at least one dynamic Navigation using `wp_nav_menu()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/components/header.php#L2) **or** use this custom [function called `get_theme_menu()`](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/components/header.php#L2) to create your own custom navigation
+  - Include a custom theme screenshot for your [theme](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/screenshot.jpg). Here is an [article](https://wpism.com/wordpress-theme-screenshot/#:~:text=According%20to%20the%20WordPress%20Codex,of%20880%20x%20660%20pixels.) with the dimensions.
   - Include favicon into your `<head>`
-  - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/header.php) tags
+  - Add dynamic [title](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/header.php#L8) tags
   - Properly included your css/js files using `wp_enqueue_script()`/`wp_enqueue_style()` in your [theme](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/includes/setup.php)
 - WordPress Template Requirements (30/40 points)
   - [Front Page](https://developer.wordpress.org/themes/functionality/custom-front-page-templates/#custom-site-front-page-template)
