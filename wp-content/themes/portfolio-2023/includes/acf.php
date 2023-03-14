@@ -53,16 +53,24 @@ function my_acf_init()
             'icon' => 'admin-comments',
             'keywords' => ['logo', 'grid', 'boxes', 'images', 'img grid'],
         ]);
+
+        acf_register_block([
+            'name' => 'image-block-quote',
+            'title' => __('Image Block Quote'),
+            'description' => __('A custom block quote block.'),
+            'render_callback' => 'my_acf_block_render_callback',
+            'category' => 'formatting',
+            'icon' => 'admin-comments',
+            'keywords' => ['image', 'quote', 'citation', 'blockquote', 'img quote'],
+        ]);
     }
 }
 add_action('acf/init', 'my_acf_init');
 
 function my_acf_block_render_callback($block)
 {
-    // ['acf/logo-cloud']
     // convert name ("acf/testimonial") into path friendly slug ("testimonial")
     $slug = str_replace('acf/', '', $block['name']);
-    // $slug = 'logo-cloud';
     $block_directory = '/blocks';
 
     // include a template part from within the "blocks/{name-of-block.php}"
