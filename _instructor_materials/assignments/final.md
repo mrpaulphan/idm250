@@ -29,11 +29,11 @@ Complete website with responsive design, all functionality, animation...etc
 - WordPress Template Requirements (30/40 points)
   - [Front Page](https://developer.wordpress.org/themes/functionality/custom-front-page-templates/#custom-site-front-page-template)
       - On the site front page, WordPress will always use the front-page.php template file, if it exists. If front-page.php does not exist, WordPress will determine which template file to use, depending on the user configuration of Settings > Reading >Front page displays, as follows:
+      - Example of the front page template [here](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/front-page.php)
       - Check List
         - [ ] Template has a unique design
         - [ ] There is not static text in your code
         - [ ] You're pulling in dynamic content through wordpress or ACF.
-  - Example of the front page template [here](https://github.com/mrpaulphan/idm250/blob/master/wp-content/themes/portfolio-2023/front-page.php)
   - General/Default
     - Create a default template for pages in your theme. You can use `page.php`
     - [Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/page.php)
@@ -104,25 +104,17 @@ Complete website with responsive design, all functionality, animation...etc
     - [Archive Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/archive.php)
     - The post listing should be a custom WP template you create to list all of your posts.
     - [Post Listing Template Example](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/template-project-listing.php)
-  - Post Detail
-    - Create a detail page for your custom post type
-    - [Example of default post detail](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/single.php)
-    - [Example of a custom post type detail page](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/single-idm-projects.php)
-    - [How to create a custom post type single page](https://developer.wordpress.org/themes/template-files-section/custom-post-type-template-files/)
-  - Search Results
-    - Create a search listing page like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/search.php)
-    - Make sure you have a search form like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/components/search-form.php)
   - [404 (Not Found)](https://developer.wordpress.org/themes/functionality/404-pages/#creating-the-404-php-file)
     - A 404 page is important to add into your theme in case a user stumbles upon a page that doesn’t exist or hasn’t been created yet. It is also important that your 404 page gives your visitors a way to arrive at the right place.
-
     - Create a custom 404 page like [this](https://github.com/mrpaulphan/idm250/blob/master/public/wp-content/themes/idm250/404.php)
+- Create a user for me to login and test your site out on PRODUCTION. This user should have the role of `administrator`  and the username should be `mrpaulphan` and the password should be `idm250`. The email should be `pp455@drexel.edu`. [Here](https://www.wpbeginner.com/beginners-guide/how-to-add-new-users-and-authors-to-your-wordpress-blog/) is how you can create a user on your wordpress site. Please make sure you test this and sign in before submitting your project.
 - Code Quality
   Site is smartly coded using modules for repeating code segments
   Content is **NOT STATIC** and can be updated through the WordPress dashboard
   Code is clean. White spaces, comments, and proper indentation is used in the files.
 
 ### Extra Credit
-- [ ] Create 3 custom blocks using ACF
+- [ ] Create three custom blocks using ACF (WIP)
 - [ ] Create an ACF Options page that will allow me to update the logo, favicon, footer text, and 404 page.
 
 ### Submission Example
@@ -132,30 +124,30 @@ Website: {link-to-project}
 Github: {link-to-project-repo-fully-updated}
 Description: {short description about what your site is and anything extra you added}
 
+Login URL: {link-to-login-page}
+username: mrpaulphan
+password: idm250
 
 Templates
 --
-404 Template: {example-link-of-a-page-using-the-404-page}
-Github: {direct-link-to-the-file}
-
 Home Template: {example-link-of-home-page}
 Github: {direct-link-to-the-file}
 
-Post Listing Template: {example-link}
-Github: {direct-link-to-the-file}
-
-Archive Page: {example-link}
-Github: {direct-link-to-the-file}
-
-Project Detail Template: {example-link}
+Single  Template: {example-link}
 Github: {direct-link-to-the-file}
 
 General/Default Template: {example-link}
 Github: {direct-link-to-the-file}
 
-Search Template: {example-link}
+Custom Page Template: {example-link}
 Github: {direct-link-to-the-file}
 
-Custom Template: {example-link}
+Archive Page or Post Listing Template: {example-link}
 Github: {direct-link-to-the-file}
+
+404 Template: {example-link-of-a-page-using-the-404-page}
+Github: {direct-link-to-the-file}
+
+Extra Credit:
+Write a short description of everything you did. Provide links so I can easily access and see your work.
 ```

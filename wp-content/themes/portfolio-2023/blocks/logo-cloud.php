@@ -8,10 +8,8 @@
       <?php  $images = get_field('logo_cloud_logos');
       if($images): ?>
       <?php foreach($images as $image): ?>
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-        src="<?php echo esc_url($image['url']); ?>"
-        alt="<?php echo esc_attr($image['alt']); ?>"
-        width="158" height="48">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="<?php echo esc_url($image['url']); ?>"
+        alt="<?php echo esc_attr($image['alt']); ?>" width="158" height="48">
       <?php endforeach; ?>
       <?php endif; ?>
     </div>
