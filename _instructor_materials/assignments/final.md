@@ -114,8 +114,9 @@ Complete website with responsive design, all functionality, animation...etc
   Code is clean. White spaces, comments, and proper indentation is used in the files.
 
 ### Extra Credit
-- [ ] Create three custom blocks using ACF (WIP)
-- [ ] Create an ACF Options page that will allow me to update the logo, favicon, footer text, and 404 page.
+To receive full credit, you must hit every criteria
+- [ ] Create three unique custom ACF blocks using ACF (5 points).
+- [ ] Create an ACF Options page that will allow me to update the logo, favicon, footer text, and 404 page. (3 points)
 
 ### Submission Example
 
