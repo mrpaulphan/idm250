@@ -20,7 +20,6 @@
         bloginfo('name');
     } else {
         wp_title('', true, 'right');
-        bloginfo('name');
     }
   ?>
   </title>
@@ -33,5 +32,5 @@
   // @link https://developer.wordpress.org/reference/functions/wp_body_open/
   // Fires the wp_body_open action.
   wp_body_open();
-  get_template_part('components/header')
+  get_template_part('components/main-nav')
   ?>

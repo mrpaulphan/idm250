@@ -14,6 +14,8 @@ $menu = get_theme_menu('primary-menu');
       if(!empty($image)): ?>
       <img class="h-8 w-auto" src="<?php echo esc_url($image['url']); ?>"
         alt="<?php echo esc_attr($image['alt']); ?>" />
+      <?php else: ?>
+      <img class="h-8 w-auto" src="https://static.cdnlogo.com/logos/c/18/ChatGPT_800x800.png" alt="">
       <?php endif; ?>
     </a>
     <div class="flex lg:hidden">

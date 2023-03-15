@@ -13,7 +13,7 @@
   </div>
   <div class="max-w-xl">
     <div class="mt-8 flex items-center gap-x-4 text-xs">
-      <time datetime="2020-03-16"
+      <time datetime="<?php echo get_the_date(); ?>"
         class="text-gray-500"><?php echo get_the_date(); ?></time>
       <?php get_template_part('components/blog-categories-list'); ?>
 
